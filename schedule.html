@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Schedule | Summit Scholars</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="schedule">
+
+<header>
+
+<a href="index.html" class="logo">
+<img src="summit-logo.png" class="logo-img" alt="Summit Scholars Logo">
+</a>
+
+<nav>
+<a href="profile.html" data-i18n="nav_profile">Profile</a>
+<a href="courses.html" data-i18n="nav_courses">Courses</a>
+<a href="consulting.html" data-i18n="nav_consulting">College Consulting</a>
+<a href="schedule.html" data-i18n="nav_schedule">Schedule</a>
+</nav>
+
+<div class="lang-switch">
+<a href="#" onclick="setEnglish(); return false;">English</a>
+<span class="lang-separator">|</span>
+<a href="#" onclick="setKorean(); return false;">한국어</a>
+</div>
+
+</header>
+
+<div class="container" style="max-width:900px;margin:40px auto;">
+
+<h1 class="reveal reveal-delay-1" data-i18n="schedule_title">Schedule a Meeting</h1>
+
+<p class="reveal reveal-delay-2" data-i18n="schedule_text1" style="margin-top:20px;line-height:1.7;">
+Parents may schedule an introductory consultation to discuss student academic goals, course planning, and tutoring structure.
+</p>
+
+<div class="reveal-card reveal-delay-3" style="margin-top:35px;border:1px solid #d4af37;padding:25px;border-radius:8px;background:#f8fafc;">
+
+<p style="margin-bottom:12px;"><strong data-i18n="consult_length">Consultation Length:</strong> 30 minutes</p>
+
+<p style="margin-bottom:12px;"><strong data-i18n="consult_format">Format:</strong> Online meeting</p>
+
+<p><strong data-i18n="consult_email">Email to schedule:</strong> your@email.com</p>
+
+</div>
+
+</div>
+
+<footer>
+<p>Summit Scholars</p>
+</footer>
+<script>
+function revealOnScroll(){
+const reveals = document.querySelectorAll(".reveal, .reveal-card");
+
+reveals.forEach(el => {
+const windowHeight = window.innerHeight;
+const elementTop = el.getBoundingClientRect().top;
+
+if(elementTop < windowHeight - 80){
+el.classList.add("active");
+}
+});
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+</script>
+
+<script src="lang.js"></script>
+</body>
+</html>

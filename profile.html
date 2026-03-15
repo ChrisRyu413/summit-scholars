@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Profile</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="profile">
+
+<header>
+
+<a href="index.html" class="logo">
+<img src="summit-logo.png" class="logo-img" alt="Summit Scholars Logo" style="height:60px;">
+</a>
+
+<nav>
+<a href="profile.html" data-i18n="nav_profile">Profile</a>
+<a href="courses.html" data-i18n="nav_courses">Courses</a>
+<a href="consulting.html" data-i18n="nav_consulting">College Consulting</a>
+<a href="schedule.html" data-i18n="nav_schedule">Schedule</a>
+</nav>
+
+<div class="lang-switch">
+<a href="#" onclick="setEnglish(); return false;">English</a>
+<span class="lang-separator">|</span>
+<a href="#" onclick="setKorean(); return false;">한국어</a>
+</div>
+
+</header>
+
+<section class="profile-page">
+
+<h1 data-i18n="profile_title">About the Founder</h1>
+
+<div class="profile-header reveal reveal-delay-1" style="display:flex;gap:40px;align-items:flex-start;max-width:900px;">
+
+<div class="profile-intro" style="flex:1;">
+<p data-i18n="profile_intro1">
+I am the founder and lead mentor of Summit Scholars, an academic mentorship program focused on helping students build strong analytical thinking and long-term academic success. Our program emphasizes conceptual understanding, structured learning, and rigorous preparation through custom-designed materials. Alongside my own mentorship, a small team of experienced instructors and academic specialists support students in tutoring and college consulting.
+</p>
+<p style="margin-top:15px;max-width:900px;">
+<strong data-i18n="affiliated_with">Affiliated with:</strong>
+</p>
+
+<div style="display:flex;align-items:center;gap:20px;margin-top:20px;flex-wrap:wrap;">
+<img src="ccir-logo.png" alt="Cambridge Centre for International Research" style="height:60px;">
+<div>
+<p style="margin:0;"><strong>Cambridge Centre for International Research (CCIR)</strong></p>
+<p style="margin:4px 0 0 0;">Student Researcher · Spotlight Student (2×)</p>
+</div>
+</div>
+</div>
+
+<div class="profile-photo" style="border:3px solid #d4af37;padding:10px;border-radius:10px;background:white;">
+<img src="photo.png" alt="Instructor Photo" style="width:220px;border-radius:6px;display:block;">
+</div>
+
+</div>
+
+<h2 data-i18n="education">Education</h2>
+
+<div class="profile-block reveal-card reveal-delay-1">
+
+<p><strong>Daegu International School (DIS)</strong></p>
+
+<p>
+Expected Graduation: May 2026<br>
+Cumulative GPA: 101.64 / 100<br>
+High Honors
+</p>
+
+</div>
+
+
+<h2 data-i18n="research">Research & Academic Experience</h2>
+
+<div class="profile-block reveal-card reveal-delay-2">
+<ul>
+<li><strong>Princeton Journal of Interdisciplinary Research (PJIR)</strong> — Published Paper & Best Paper Award</li>
+<li><strong>Cambridge Centre for International Research (CCIR)</strong> — Student Researcher</li>
+<li><strong>CCIR Winter Symposium</strong> — University of Cambridge</li>
+<li><strong>ICBIBE</strong> — International Conference Presentation</li>
+<li><strong>HGSA</strong> — International Conference Presentation</li>
+<li><strong>Carnegie Mellon University</strong> — Computational Biology Program</li>
+<li><strong>NYU School of Professional Studies</strong> — Academic Program</li>
+<li><strong>Harvard Science Research Conference</strong></li>
+</ul>
+</div>
+
+<h2 data-i18n="leadership">Leadership & Activities</h2>
+
+<div class="profile-block reveal-card reveal-delay-3">
+<ul>
+<li><strong>DIS GIDAS Club (Genes in Disease and Symptoms)</strong> — Founder & President</li>
+<li><strong>DIS Spanish Honor Society</strong> — Founder & President</li>
+<li><strong>Science National Honor Society</strong> — Vice President</li>
+<li><strong>DIS High School Student Council</strong> — President / Vice President</li>
+<li><strong>Daegu Youth Committee of Daegu City</strong> — Group Leader</li>
+<li><strong>YouthImpact ReminArt</strong> — Project Leader</li>
+<li><strong>Hackensack University Medical Center & HMH Palisades Medical Center</strong> — Medical Volunteer</li>
+<li><strong>Fox Vein Care / Park Slope Gastroenterology</strong> — Medical Shadowing</li>
+<li><strong>DIS Rock Band / DIS Orchestra / KMEA National Honor Band</strong></li>
+</ul>
+</div>
+
+<h2 data-i18n="awards">Awards & Honors</h2>
+
+<div class="profile-block reveal-card reveal-delay-4">
+
+<ul>
+<li><strong>Best Paper Award</strong> — Princeton Journal of Interdisciplinary Research</li>
+<li><strong>Best Position Paper Award</strong> — Yale MUN Korea (YMUNK XII)</li>
+<li><strong>American Computer Science League</strong> — Bronze (Intermediate Division) & Silver (Junior Division)</li>
+<li><strong>Silver</strong> — Harvard International Review Academic Writing Contest</li>
+<li><strong>Hugh O'Brian Youth Leadership Award</strong> — HOBY Korea</li>
+</ul>
+
+</div>
+
+<h2 data-i18n="publications">Publications</h2>
+
+<div class="profile-block reveal-card reveal-delay-1">
+
+<ul>
+
+<li>
+<strong>Overlapping Staphylococcus aureus Population in Ear and Eye and Gastrointestinal Disease</strong><br>
+Princeton Journal of Interdisciplinary Research (2025)
+</li>
+
+<li>
+<strong>Exploring the Role of the Non-Coding Strand: Antisense Transcription and Gene Regulation</strong><br>
+International Conference on Biological Information and Biomedical Engineering (2024)
+</li>
+
+<li>
+<strong>Free Trade and Protectionism: The Global Struggle for Economic Dominance</strong><br>
+Research Archive of Rising Scholars (2025)
+</li>
+
+</ul>
+
+</div>
+
+<h2 data-i18n="skills">Skills</h2>
+
+<div class="profile-block reveal-card reveal-delay-2">
+
+<p>Programming: MATLAB, Java, C</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>Summit Scholars</p>
+
+</footer>
+
+<script>
+function revealOnScroll(){
+const reveals = document.querySelectorAll(".reveal, .reveal-card");
+
+reveals.forEach(el => {
+const windowHeight = window.innerHeight;
+const elementTop = el.getBoundingClientRect().top;
+
+if(elementTop < windowHeight - 80){
+el.classList.add("active");
+}
+});
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+</script>
+
+<script src="lang.js"></script>
+
+</body>
+</html>

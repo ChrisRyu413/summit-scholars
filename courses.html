@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Courses</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.foundation-grid .course-box{
+background:#eef5ff;
+border:2px solid #4a6fdc;
+}
+
+.elementary-grid .course-box{
+background:#fff4e6;
+border:2px solid #d49b37;
+}
+
+.foundation-title{
+color:#2c4cc9;
+}
+
+.elementary-title{
+color:#c27b00;
+}
+</style>
+</head>
+
+<body data-page="courses">
+
+<header>
+
+<a href="index.html" class="logo">
+<img src="summit-logo.png" class="logo-img" alt="Summit Scholars Logo">
+</a>
+
+<nav>
+<a href="profile.html" data-i18n="nav_profile">Profile</a>
+<a href="courses.html" data-i18n="nav_courses">Courses</a>
+<a href="consulting.html" data-i18n="nav_consulting">College Consulting</a>
+<a href="schedule.html" data-i18n="nav_schedule">Schedule</a>
+</nav>
+
+<div class="lang-switch">
+<a href="#" onclick="setEnglish(); return false;">English</a>
+<span class="lang-separator">|</span>
+<a href="#" onclick="setKorean(); return false;">한국어</a>
+</div>
+
+</header>
+
+<section class="courses-page">
+
+<h1 data-i18n="courses_title">Courses</h1>
+
+<p class="courses-intro reveal reveal-delay-1" data-i18n="courses_intro">
+Students are trained using structured practice, real mock examinations based on
+previous AP exam questions, and concept-focused lessons designed to guide students
+toward strong academic performance.
+</p>
+
+<h2 class="course-section-title" data-i18n="ap_courses">AP Courses (Grades 9-12)</h2>
+
+<div class="course-grid">
+
+<div class="course-box reveal-card reveal-delay-1">AP Calculus BC</div>
+<div class="course-box reveal-card reveal-delay-2">AP Chemistry</div>
+<div class="course-box reveal-card reveal-delay-3">AP Microeconomics</div>
+<div class="course-box reveal-card reveal-delay-4">AP Macroeconomics</div>
+<div class="course-box reveal-card reveal-delay-1">AP Computer Science A</div>
+<div class="course-box reveal-card reveal-delay-2">AP Computer Science Principles</div>
+<div class="course-box reveal-card reveal-delay-3">AP Music Theory</div>
+<div class="course-box reveal-card reveal-delay-4">AP English Language and Composition</div>
+<div class="course-box reveal-card reveal-delay-1">AP United States History</div>
+
+</div>
+
+
+<h2 class="course-section-title" data-i18n="ap_dev">AP Courses in Development</h2>
+
+<div class="course-grid">
+
+<div class="course-box soon reveal-card reveal-delay-1">AP Biology</div>
+<div class="course-box soon reveal-card reveal-delay-2">AP Statistics</div>
+<div class="course-box soon reveal-card reveal-delay-3">AP English Literature and Composition <br><small>(Not offered currently)</small></div>
+<div class="course-box soon reveal-card reveal-delay-4">AP Spanish Language and Culture <br><small>(Not offered currently)</small></div>
+
+</div>
+
+<h2 class="course-section-title foundation-title" data-i18n="foundational">Foundational Courses (Grades 4-8)</h2>
+
+<div class="course-grid foundation-grid">
+
+<div class="course-box reveal-card reveal-delay-1">Foundational Math<br><small>(SAT Prep, Pre‑Algebra, Algebra I, Algebra II)</small></div>
+<div class="course-box reveal-card reveal-delay-2">Foundational English<br><small>(SAT Prep – Reading & Writing, Essay, Speaking)</small></div>
+
+</div>
+
+
+</section>
+
+<footer>
+<p>Summit Scholars</p>
+</footer>
+
+</body>
+<script>
+function revealOnScroll(){
+const reveals = document.querySelectorAll(".reveal, .reveal-card");
+
+reveals.forEach(el => {
+const windowHeight = window.innerHeight;
+const elementTop = el.getBoundingClientRect().top;
+
+if(elementTop < windowHeight - 80){
+el.classList.add("active");
+}
+});
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+</script>
+
+<script src="lang.js"></script>
+</html>
