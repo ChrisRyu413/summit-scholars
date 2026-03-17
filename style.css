@@ -399,4 +399,42 @@ transform:translateY(0) scale(1);
 .section-soft-blue{background:var(--soft-blue);} 
 .section-gold-soft{background:var(--gold-soft);} 
 .section-accent-green{background:var(--accent-green); color:white;} 
-.section-accent-purple{background:var(--accent-purple); color:white;} 
+.section-accent-purple{background:var(--accent-purple); color:white;}
+
+/* Floating Consultation Button */
+
+.floating-consult{
+
+position: fixed;
+right: 30px;
+bottom: 30px;
+
+background: #c5a24d;
+color: white;
+
+padding: 14px 20px;
+
+font-size: 14px;
+font-weight: 600;
+
+border-radius: 30px;
+
+text-decoration: none;
+
+box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+
+transition: all .25s ease;
+
+z-index: 9999;
+
+}
+
+.floating-consult:hover{
+
+transform: translateY(-3px);
+
+background: #a8892e;
+
+box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+}

@@ -1,11 +1,48 @@
+
 // Summit Scholars Website Language System
 
-const translations = {
+/* ----------------------------------------------------------------
+PROJECT STRUCTURE (for scalable multilingual architecture)
+
+tutoring-website/
+│
+├── index.html
+├── profile.html
+├── courses.html
+├── consulting.html
+├── schedule.html
+│
+├── css/
+│   └── styles.css
+│
+├── js/
+│   ├── lang.js
+│   ├── navigation.js
+│   └── animations.js
+│
+└── translations/
+    ├── nav.js
+    ├── hero.js
+    ├── profile.js
+    ├── courses.js
+    └── consulting.js
+
+As the site grows, each page's translations can move into
+the /translations folder and be imported here.
+---------------------------------------------------------------- */
+
+/* ---------------- NAVIGATION ---------------- */
+const nav = {
 
   nav_profile: { en: "Profile", ko: "프로필" },
   nav_courses: { en: "Courses", ko: "수업" },
   nav_consulting: { en: "College Consulting", ko: "대학 컨설팅" },
-  nav_schedule: { en: "Schedule", ko: "상담 예약" },
+  nav_schedule: { en: "Schedule", ko: "상담 예약" }
+
+};
+
+/* ---------------- HOME PAGE ---------------- */
+const hero = {
 
   hero_title: { en: "Summit Scholars<br>Academic Mentorship", ko: "Summit Scholars<br>학업 멘토링" },
   hero_subtitle: { en: "Custom curriculum. Structured thinking. Proven academic results.", ko: "맞춤형 커리큘럼 · 체계적인 사고 · 검증된 학업 성과" },
@@ -23,7 +60,12 @@ const translations = {
   pathway_title: { en: "Academic Pathway", ko: "학업 성장 경로" },
   pathway_hint: { en: "← Scroll to explore the academic progression →", ko: "← 스크롤하여 학업 성장 단계를 확인하세요 →" },
 
-  summit_title: { en: "Why Become a Summit Scholar", ko: "왜 Summit Scholars 인가" },
+  summit_title: { en: "Why Become a Summit Scholar", ko: "왜 Summit Scholars 인가" }
+
+};
+
+/* ---------------- PROFILE PAGE ---------------- */
+const profile = {
 
   profile_title: { en: "About the Founder", ko: "설립자 소개" },
 
@@ -39,7 +81,12 @@ const translations = {
   leadership: { en: "Leadership & Activities", ko: "리더십 및 활동" },
   awards: { en: "Awards & Honors", ko: "수상 경력" },
   publications: { en: "Publications", ko: "출판" },
-  skills: { en: "Skills", ko: "기술" },
+  skills: { en: "Skills", ko: "기술" }
+
+};
+
+/* ---------------- COURSES PAGE ---------------- */
+const courses = {
 
   courses_title: { en: "Courses", ko: "수업 과목" },
 
@@ -50,9 +97,79 @@ const translations = {
 
   ap_courses: { en: "AP Courses (Grades 9-12)", ko: "AP 과정 (9-12학년)" },
   ap_dev: { en: "AP Courses in Development", ko: "개발 중인 AP 과정" },
-  foundational: { en: "Foundational Courses (Grades 4-8)", ko: "기초 과정 (4-8학년)" },
+  foundational: { en: "Foundational Courses (Grades 4-8)", ko: "기초 과정 (4-8학년)" }
+
+};
+
+/* ---------------- CONSULTING PAGE ---------------- */
+const consulting = {
 
   consulting_title: { en: "College Consulting", ko: "대학 입시 컨설팅" },
+
+  consulting_intro: {
+    en: "Summit Scholars provides a structured consulting framework guiding students from early academic planning to competitive university admissions. Each stage builds a strong academic identity tailored to the student’s intended field.",
+    ko: "Summit Scholars는 학생들이 초기 학업 계획부터 경쟁력 있는 대학 진학까지 준비할 수 있도록 체계적인 컨설팅 프레임워크를 제공합니다. 각 단계는 학생이 선택한 전공 분야에 맞는 강한 학업 정체성을 형성하도록 설계되어 있습니다."
+  },
+
+  consulting_major_title: { 
+    en: "Major-Focused Strategy", 
+    ko: "전공 중심 전략" 
+  },
+
+  consulting_major_text: {
+    en: "Consulting begins by identifying the student’s intended academic pathway such as medicine, dentistry, business, or other disciplines. Each student receives a long-term strategy aligned with their field. Students pursuing medicine or dentistry receive direct guidance from the program founder.",
+    ko: "컨설팅은 의대, 치대, 경영 등 학생이 목표로 하는 전공 분야를 설정하는 것에서 시작합니다. 각 학생은 자신의 진로에 맞는 장기 전략을 수립하며, 의대와 치대를 준비하는 학생들은 프로그램 설립자의 직접 지도를 받게 됩니다."
+  },
+
+  consulting_academic_title: { 
+    en: "Academic Performance & Testing", 
+    ko: "학업 성취 및 시험 전략" 
+  },
+
+  consulting_academic_text: {
+    en: "Students receive structured guidance for GPA management, course selection, SAT preparation, AP coursework strategy, and other standardized examinations that strengthen a competitive academic profile.",
+    ko: "학생들은 GPA 관리, 과목 선택 전략, SAT 준비, AP 과목 전략 등 경쟁력 있는 학업 프로필을 구축하기 위한 체계적인 학습 지도를 받습니다."
+  },
+
+  consulting_portfolio_title: { 
+    en: "Portfolio Development", 
+    ko: "포트폴리오 개발" 
+  },
+
+  consulting_extracurricular_title: { 
+    en: "Extracurricular Activities", 
+    ko: "비교과 활동" 
+  },
+
+  consulting_honors_title: { 
+    en: "Honors & Distinction", 
+    ko: "수상 및 성과" 
+  },
+
+  consulting_application_title: { 
+    en: "College Application Strategy", 
+    ko: "대학 지원 전략" 
+  },
+
+  consulting_application_text: {
+    en: "The final stage focuses on building a compelling university application. Students receive guidance on Common Application essays, supplemental essays, and presenting their full academic portfolio as a coherent narrative for university admissions.",
+    ko: "마지막 단계에서는 경쟁력 있는 대학 지원서를 완성하는 데 집중합니다. 학생들은 Common Application 에세이, 보충 에세이 작성, 그리고 자신의 학업 및 활동 포트폴리오를 하나의 일관된 이야기로 구성하는 방법에 대한 지도를 받습니다."
+  },
+
+  consulting_motto: {
+    en: "Plan early. Build depth. Present your story well.",
+    ko: "일찍 계획하고, 깊이를 쌓고, 자신의 이야기를 잘 전달하세요."
+  },
+
+  consulting_motto_sub: {
+    en: "A structured pathway from academic planning to successful university admission.",
+    ko: "체계적인 학업 계획부터 성공적인 대학 진학까지 이어지는 로드맵입니다."
+  },
+
+  consulting_notice: {
+    en: "College consulting services are currently in development and will be launching soon.",
+    ko: "대학 입시 컨설팅 서비스는 현재 준비 중이며 곧 제공될 예정입니다."
+  },
 
   consulting_text1: {
     en: "College consulting services will open soon through Summit Scholars.",
@@ -79,6 +196,9 @@ const translations = {
   consult_length: { en: "Consultation Length:", ko: "상담 시간:" },
   consult_format: { en: "Format:", ko: "형식:" },
   consult_email: { en: "Email to schedule:", ko: "예약 이메일:" },
+  consult_length_full: { en: "Consultation Length: 30 minutes", ko: "상담 시간: 30분" },
+  consult_format_full: { en: "Format: Online meeting", ko: "형식: 온라인 미팅" },
+  consult_booking_full: { en: "Booking: Schedule a meeting directly through the booking link below.", ko: "예약: 아래 링크를 통해 상담 일정을 바로 예약하세요." },
 
   summit_text: {
     en: "Summit Scholars combines academic rigor, long-term mentorship, and strategic planning to develop students who are not only academically strong but also intellectually curious and well prepared for the most competitive universities.",
@@ -104,24 +224,30 @@ const translations = {
 
 };
 
+/* ---------------- GLOBAL TRANSLATION MERGE ---------------- */
+
+const translations = {
+  ...nav,
+  ...hero,
+  ...profile,
+  ...courses,
+  ...consulting
+};
+
 function applyLanguage(lang) {
 
   document.querySelectorAll('[data-i18n]').forEach(el => {
-
     const key = el.getAttribute('data-i18n');
-
-    if(translations[key] && translations[key][lang]){
-
-      if(el.tagName === "H1" || el.tagName === "DIV" || el.innerHTML.includes("<br>")){
-        el.innerHTML = translations[key][lang];
-      } else {
-        el.innerText = translations[key][lang];
-      }
-
+    const entry = translations[key];
+    if(!entry) return;
+    const text = entry[lang] || entry["en"]; // fallback to English
+    if(!text) return;
+    if(el.tagName === "H1" || el.tagName === "DIV" || el.innerHTML.includes("<br>")){
+      el.innerHTML = text;
+    } else {
+      el.innerText = text;
     }
-
   });
-
 }
 
 function setKorean(){
@@ -132,6 +258,105 @@ function setKorean(){
 function setEnglish(){
   localStorage.setItem('siteLanguage','en');
   applyLanguage('en');
+}
+
+/* ---------------- FLOATING CONSULT BUTTON ---------------- */
+
+function injectConsultStyles(){
+  const style = document.createElement("style");
+  style.innerHTML = `
+  .floating-consult{
+    position:fixed;
+    right:28px;
+    bottom:28px;
+
+    background:linear-gradient(135deg,#d6b25a,#b89333);
+    color:#fff;
+
+    padding:14px 22px;
+
+    border-radius:32px;
+
+    font-weight:600;
+    font-size:14px;
+    letter-spacing:.3px;
+
+    text-decoration:none;
+
+    box-shadow:
+      0 6px 20px rgba(0,0,0,0.25),
+      0 0 12px rgba(214,178,90,0.45);
+
+    z-index:9999;
+
+    overflow:hidden;
+
+    transition:
+      transform .22s ease,
+      box-shadow .22s ease,
+      background .25s ease;
+  }
+
+  .floating-consult:hover{
+
+    transform:translateY(-4px) scale(1.04);
+
+    box-shadow:
+      0 12px 32px rgba(0,0,0,0.35),
+      0 0 18px rgba(214,178,90,0.7);
+
+    background:linear-gradient(135deg,#e2c067,#c9a046);
+  }
+
+  .floating-consult::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-75%;
+    width:50%;
+    height:100%;
+    background:linear-gradient(
+      120deg,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.55) 50%,
+      rgba(255,255,255,0) 100%
+    );
+    transform:skewX(-20deg);
+    animation:consultShine 4s infinite;
+  }
+
+  @keyframes consultShine{
+    0%{ left:-75%; }
+    60%{ left:130%; }
+    100%{ left:130%; }
+  }
+  `;
+  document.head.appendChild(style);
+}
+
+function createConsultButton(){
+
+  if(document.querySelector(".floating-consult")) return;
+
+  const btn = document.createElement("a");
+
+  btn.href = "https://calendly.com/chrisryu4986/30min";
+  btn.target = "_blank";
+  btn.className = "floating-consult";
+
+  btn.setAttribute("data-i18n","book_consult");
+  btn.innerText = "Book Consultation";
+
+  document.body.appendChild(btn);
+
+}
+
+injectConsultStyles();
+
+if(document.body){
+  createConsultButton();
+}else{
+  window.addEventListener("DOMContentLoaded", createConsultButton);
 }
 
 window.addEventListener('DOMContentLoaded', function(){

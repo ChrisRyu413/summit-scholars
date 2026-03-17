@@ -39,50 +39,143 @@
 
 </header>
 
-
-
-<div class="container">
-<div class="consulting-content" style="max-width:900px;margin:0 auto;padding:30px 20px;">
-
-
-
-<h1 class="consulting-title reveal reveal-delay-1" data-i18n="consulting_title" style="margin-bottom:25px;">College Consulting</h1>
+<div id="journey-track">
+  <div id="journey-path"></div>
+  <div id="journey-student">🧑</div>
+</div>
 
 
 
-<div class="consulting-intro consulting-section reveal reveal-delay-2" style="margin:30px 0;">
-<p data-i18n="consulting_text1" style="line-height:1.7;">
-College consulting services will open soon through Summit Scholars.
+<div id="consulting-notice" class="consulting-notice" style="max-width:900px;margin:30px auto;padding:16px 20px;background:#fff4d6;border:1px solid #e6c96b;border-radius:8px;display:flex;justify-content:space-between;align-items:center;font-size:15px;">
+<span data-i18n="consulting_notice">College consulting services are currently in development and will be launching soon.</span>
+<button onclick="dismissNotice()" style="background:none;border:none;font-size:18px;cursor:pointer;color:#555;">×</button>
+</div>
+
+
+
+<section style="padding:140px 0 120px 0;background:#0f172a;color:white;text-align:center;margin-top:10px;">
+<div style="max-width:900px;margin:0 auto;padding:0 20px;">
+<h1 class="consulting-title reveal active" data-i18n="consulting_title" style="font-size:42px;margin-bottom:25px;">College Consulting</h1>
+<p data-i18n="consulting_intro" style="font-size:18px;line-height:1.8;opacity:0.9;">
+Summit Scholars provides a structured consulting framework guiding students from early academic planning to competitive university admissions. Each stage builds a strong academic identity tailored to the student’s intended field.
+</p>
+</div>
+</section>
+
+<section style="padding:100px 0;background:white;">
+<div style="max-width:1100px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+<div>
+<h2 data-i18n="consulting_major_title" style="font-size:32px;margin-bottom:20px;">Major‑Focused Strategy</h2>
+<p data-i18n="consulting_major_text" style="line-height:1.8;">
+Consulting begins by identifying the student’s intended academic pathway such as medicine, dentistry, business, or other disciplines. Each student receives a long‑term strategy aligned with their field. Students pursuing medicine or dentistry receive direct guidance from the program founder.
+</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,180px);gap:18px;justify-content:center;">
+<div style="padding:20px 22px;background:#eef2ff;border-radius:10px;font-weight:700;font-size:16px;border:1px solid #dbe3ff;text-align:center;">Medicine</div>
+<div style="padding:20px 22px;background:#eef2ff;border-radius:10px;font-weight:700;font-size:16px;border:1px solid #dbe3ff;text-align:center;">Dentistry</div>
+<div style="padding:20px 22px;background:#eef2ff;border-radius:10px;font-weight:700;font-size:16px;border:1px solid #dbe3ff;text-align:center;">Business</div>
+<div style="padding:20px 22px;background:#eef2ff;border-radius:10px;font-weight:700;font-size:16px;border:1px solid #dbe3ff;text-align:center;">Engineering</div>
+<div style="padding:20px 22px;background:#eef2ff;border-radius:10px;font-weight:700;font-size:16px;border:1px solid #dbe3ff;text-align:center;">Humanities</div>
+<div style="padding:20px 22px;background:#eef2ff;border-radius:10px;font-weight:700;font-size:16px;border:1px solid #dbe3ff;text-align:center;">Social Sciences</div>
+</div>
+</div>
+</section>
+
+<section style="padding:100px 0;background:#f8fafc;">
+<div style="max-width:1100px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+<div style="display:flex;flex-direction:column;align-items:center;gap:18px;">
+
+<div style="display:flex;gap:14px;">
+<div style="padding:14px 18px;background:white;border:1px solid #e2e8f0;border-radius:8px;font-weight:600;">SAT</div>
+<div style="padding:14px 18px;background:white;border:1px solid #e2e8f0;border-radius:8px;font-weight:600;">ACT</div>
+</div>
+
+<div style="font-size:22px;">↓</div>
+
+<div style="display:flex;gap:14px;">
+<div style="padding:14px 18px;background:white;border:1px solid #e2e8f0;border-radius:8px;font-weight:600;">AP</div>
+<div style="padding:14px 18px;background:white;border:1px solid #e2e8f0;border-radius:8px;font-weight:600;">IB</div>
+</div>
+
+<div style="font-size:22px;">↓</div>
+
+<div style="padding:16px 24px;background:#eef2ff;border:1px solid #c7d2fe;border-radius:10px;font-weight:700;">
+Strong Academic Profile
+</div>
+
+</div>
+<div>
+<h2 data-i18n="consulting_academic_title" style="font-size:32px;margin-bottom:20px;">Academic Performance & Testing</h2>
+<p data-i18n="consulting_academic_text" style="line-height:1.8;">
+Students receive structured guidance for GPA management, course selection, SAT preparation, AP coursework strategy, and other standardized examinations that strengthen a competitive academic profile.
+</p>
+</div>
+</div>
+</section>
+
+<section style="padding:110px 0;background:white;">
+<div style="max-width:1100px;margin:0 auto;padding:0 20px;text-align:center;">
+<h2 data-i18n="consulting_portfolio_title" style="font-size:32px;margin-bottom:50px;">Portfolio Development</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;">
+
+<div class="feature">
+<h3 data-i18n="consulting_extracurricular_title" style="margin-bottom:15px;">Extracurricular Activities</h3>
+<ul style="line-height:1.9;text-align:left;max-width:260px;margin:0 auto;">
+<li>Nonprofit initiatives</li>
+<li>Shadowing & volunteering</li>
+<li>Leadership in school clubs</li>
+</ul>
+</div>
+
+<div class="feature">
+<h3 data-i18n="consulting_honors_title" style="margin-bottom:15px;">Honors & Distinction</h3>
+<ul style="line-height:1.9;text-align:left;max-width:260px;margin:0 auto;">
+<li>STEM Olympiads</li>
+<li>Research conferences</li>
+<li>Essay & academic competitions</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<section style="padding:120px 0;background:#0f172a;color:white;text-align:center;">
+<div style="max-width:900px;margin:0 auto;padding:0 20px;">
+<h2 data-i18n="consulting_application_title" style="font-size:34px;margin-bottom:25px;">College Application Strategy</h2>
+<p data-i18n="consulting_application_text" style="font-size:18px;line-height:1.9;opacity:0.9;">
+The final stage focuses on building a compelling university application. Students receive guidance on Common Application essays, supplemental essays, and presenting their full academic portfolio as a coherent narrative for university admissions.
+</p>
+</div>
+</section>
+
+<!-- CONCLUSION -->
+<div class="consulting-section reveal reveal-delay-4" style="margin:0;padding:40px 0;background:#fff2cc;text-align:center;">
+<h2 data-i18n="consulting_motto" style="font-size:28px;font-weight:700;letter-spacing:1px;">
+Plan early. Build depth. Present your story well.
+</h2>
+<p data-i18n="consulting_motto_sub" style="margin-top:10px;font-size:15px;opacity:0.8;">
+A structured pathway from academic planning to successful university admission.
 </p>
 </div>
 
-<div class="consulting-coming-soon consulting-section reveal reveal-delay-3" style="margin:30px 0;">
-<p data-i18n="consulting_text2" style="line-height:1.7;">
-Future offerings will include long‑term academic planning, course selection strategy,
-college application mentorship, and guidance for highly selective university admissions.
-</p>
-</div>
-
-<div class="consulting-preview consulting-section reveal reveal-delay-4" style="margin:30px 0;">
-<p data-i18n="consulting_text3" style="line-height:1.7;">
-More information and scheduling options will be available in a future update.
-</p>
-</div>
 
 
-
-</div>
-</div>
-
-
-
-<footer>
+<footer style="margin:0;">
 
 <p>Summit Scholars</p>
 
 </footer>
 
-
+<script>
+function dismissNotice(){
+const notice = document.getElementById('consulting-notice');
+if(notice){
+notice.style.display = 'none';
+}
+}
+</script>
 
 <script>
 function revealOnScroll(){
@@ -97,10 +190,76 @@ el.classList.add("active");
 }
 });
 }
-
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
+
+function updateJourney(){
+  const student = document.getElementById("journey-student");
+  const sections = document.querySelectorAll("section");
+  if(!student || sections.length === 0) return;
+
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  const progress = scrollTop / docHeight;
+
+  const track = document.getElementById("journey-track");
+  const trackHeight = track.clientHeight - 30;   // prevent emoji from leaving the line
+  let position = progress * trackHeight;
+
+  if(position < 0) position = 0;
+  if(position > trackHeight) position = trackHeight;
+
+  student.style.transform = `translate(-50%, ${position}px)`;
+
+  const icons = ["🧑", "📘", "📚", "🏀", "🎓"];
+
+  let currentIndex = 0;
+  sections.forEach((sec, i) => {
+    const rect = sec.getBoundingClientRect();
+    if(rect.top < window.innerHeight * 0.4){
+      currentIndex = i;
+    }
+  });
+
+  if(currentIndex >= icons.length) currentIndex = icons.length - 1;
+  student.textContent = icons[currentIndex];
+}
+window.addEventListener("scroll", updateJourney);
+window.addEventListener("load", updateJourney);
 </script>
+
+<style>
+
+#journey-track{
+position:fixed;
+right:40px;
+top:110px;             /* adjusted to ensure it never overlaps the header */
+bottom:120px;          /* stop above footer */
+width:40px;
+pointer-events:none;
+z-index:5;
+}
+
+#journey-path{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+top:0;
+width:2px;
+height:100%;
+background:black;
+opacity:0.6;
+border-radius:2px;
+}
+
+#journey-student{
+position:absolute;
+left:50%;
+transform:translate(-50%,0);
+font-size:24px;
+transition:transform 0.25s ease-out;
+}
+</style>
 
 <script src="lang.js"></script>
 

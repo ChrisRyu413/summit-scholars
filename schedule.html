@@ -30,23 +30,39 @@
 
 </header>
 
-<div class="container" style="max-width:900px;margin:40px auto;">
+<div class="container schedule-container">
+<section class="schedule-section">
 
 <h1 class="reveal reveal-delay-1" data-i18n="schedule_title">Schedule a Meeting</h1>
 
-<p class="reveal reveal-delay-2" data-i18n="schedule_text1" style="margin-top:20px;line-height:1.7;">
+<p class="reveal reveal-delay-2 schedule-intro" data-i18n="schedule_text1">
 Parents may schedule an introductory consultation to discuss student academic goals, course planning, and tutoring structure.
 </p>
+</section>
 
-<div class="reveal-card reveal-delay-3" style="margin-top:35px;border:1px solid #d4af37;padding:25px;border-radius:8px;background:#f8fafc;">
+<section class="schedule-section schedule-info-section">
+<!-- Consultation Info Card -->
+<div class="reveal-card reveal-delay-3 consult-card">
 
-<p style="margin-bottom:12px;"><strong data-i18n="consult_length">Consultation Length:</strong> 30 minutes</p>
+<p data-i18n="consult_length_full">Consultation Length: 30 minutes</p>
 
-<p style="margin-bottom:12px;"><strong data-i18n="consult_format">Format:</strong> Online meeting</p>
+<p data-i18n="consult_format_full">Format: Online meeting</p>
 
-<p><strong data-i18n="consult_email">Email to schedule:</strong> your@email.com</p>
+<p data-i18n="consult_booking_full">Booking: Schedule a meeting directly through the booking link below.</p>
 
 </div>
+</section>
+
+<section class="schedule-section schedule-cta-section">
+<!-- Call To Action -->
+<div class="schedule-cta reveal reveal-delay-3">
+
+<a href="https://calendly.com/chrisryu4986/30min" target="_blank" class="schedule-button" data-i18n="book_consult">
+Book Consultation
+</a>
+
+</div>
+</section>
 
 </div>
 
@@ -72,5 +88,77 @@ window.addEventListener("load", revealOnScroll);
 </script>
 
 <script src="lang.js"></script>
+<style>
+
+.schedule-container{
+max-width:1000px;
+margin:80px auto;
+padding:0 40px;
+}
+
+.schedule-section{
+margin-bottom:70px;
+}
+
+.schedule-intro{
+margin-top:20px;
+line-height:1.8;
+font-size:1.05rem;
+}
+
+.schedule-steps{
+display:flex;
+flex-direction:column;
+gap:35px;
+margin-top:40px;
+}
+
+.schedule-step{
+display:flex;
+align-items:flex-start;
+gap:18px;
+}
+
+.step-number{
+font-size:22px;
+font-weight:700;
+color:#bfa14a;
+min-width:30px;
+}
+
+.step-text p{
+margin-top:6px;
+line-height:1.6;
+}
+
+.consult-card{
+margin-top:30px;
+padding:28px;
+border-radius:10px;
+background:#f8fafc;
+border:1px solid #d4af37;
+}
+
+.schedule-cta{
+margin-top:30px;
+}
+
+.schedule-button{
+display:inline-block;
+padding:14px 26px;
+background:#bfa14a;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:600;
+transition:all .2s ease;
+}
+
+.schedule-button:hover{
+background:#a8892e;
+transform:translateY(-2px);
+}
+
+</style>
 </body>
 </html>
