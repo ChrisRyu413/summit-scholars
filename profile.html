@@ -26,6 +26,7 @@
 <a href="#" onclick="setEnglish(); return false;">English</a>
 <span class="lang-separator">|</span>
 <a href="#" onclick="setKorean(); return false;">한국어</a>
+
 </div>
 
 </header>
@@ -59,37 +60,61 @@ I am the founder and lead mentor of Summit Scholars, an academic mentorship prog
 
 </div>
 
+<h2>College Matriculation</h2>
+
+<div class="profile-block reveal-card reveal-delay-2 matriculation-card" style="text-align:center;">
+
+<div style="display:flex;flex-direction:column;align-items:center;gap:15px;margin-bottom:25px;">
+<img src="nyu-logo.png" alt="NYU Logo" style="height:80px;">
+<p style="margin:0;font-size:20px;font-weight:600;">New York University (NYU)</p>
+<p class="nyu-program">NYU College of Dentistry — 7-Year BA/DDS Program</p>
+</div>
+
+<p style="margin-bottom:10px;color:#555;">Admissions Results</p>
+
+<ul style="font-size:14px;line-height:1.9;text-align:left;max-width:600px;margin:0 auto;">
+<li>Saint Louis University <span class="program">Medical Scholars Program</span> — <span class="scholarship">(University Scholarship, $142k total)</span></li>
+<li>Case Western Reserve University <span class="scholarship">(Vice President's Scholarship, $156k total)</span></li>
+<li>University of Rochester <span class="scholarship">(Meliora Scholarship, $140k total)</span></li>
+<li>Adelphi University <span class="scholarship">(Presidential Scholarship, $160k total)</span></li>
+<li>Villanova University</li>
+<li>New Jersey Institute of Technology <span class="scholarship">(Highlander Gateway Scholarship, $116k total)</span></li>
+<li>Rutgers University</li>
+<li>University of Pittsburgh</li>
+<li>Pennsylvania State University</li>
+<li>Drexel University <span class="scholarship">(A.J. Drexel Scholarship, $152k total)</span></li>
+<li>Rensselaer Polytechnic University <span class="scholarship">(Merit Scholarship, $152k total)</span></li>
+<li>Stevens Institute of Technology <span class="scholarship">(Scholarship, $128k total)</span></li>
+<li>Hofstra University <span class="scholarship">(Presidential Scholarship, $148k total)</span></li>
+</ul>
+
+</div>
+
 <h2 data-i18n="education">Education</h2>
 
 <div class="profile-block reveal-card reveal-delay-1">
 
 <p><strong>Daegu International School (DIS)</strong></p>
 
-<p>
-Expected Graduation: May 2026<br>
-Cumulative GPA: 101.64 / 100<br>
-High Honors
+<div class="education-stats">
+
+<p><strong>Expected Graduation:</strong> May 2026</p>
+<p><strong>GPA:</strong> 101.64 / 100 — High Honors</p>
+<p><strong>Standardized Tests:</strong> SAT 1580 &nbsp;|&nbsp; ACT 35</p>
+
+<p><strong>AP Scores:</strong></p>
+<p class="ap-list">
+5 — AP Music Theory, AP Computer Science A, AP Psychology, AP Computer Science Principles, AP Microeconomics, AP Macroeconomics, AP Chemistry, AP Calculus BC, AP English Language and Composition<br>
+4 — AP United States History
 </p>
 
+<p class="ap-note">*About to take AP Biology, AP English Literature and Composition, AP Statistics</p>
+
 </div>
 
-
-<h2 data-i18n="research">Research & Academic Experience</h2>
-
-<div class="profile-block reveal-card reveal-delay-2">
-<ul>
-<li><strong>Princeton Journal of Interdisciplinary Research (PJIR)</strong> — Published Paper & Best Paper Award</li>
-<li><strong>Cambridge Centre for International Research (CCIR)</strong> — Student Researcher</li>
-<li><strong>CCIR Winter Symposium</strong> — University of Cambridge</li>
-<li><strong>ICBIBE</strong> — International Conference Presentation</li>
-<li><strong>HGSA</strong> — International Conference Presentation</li>
-<li><strong>Carnegie Mellon University</strong> — Computational Biology Program</li>
-<li><strong>NYU School of Professional Studies</strong> — Academic Program</li>
-<li><strong>Harvard Science Research Conference</strong></li>
-</ul>
 </div>
 
-<h2 data-i18n="leadership">Leadership & Activities</h2>
+<h2>Leadership</h2>
 
 <div class="profile-block reveal-card reveal-delay-3">
 <ul>
@@ -98,14 +123,11 @@ High Honors
 <li><strong>Science National Honor Society</strong> — Vice President</li>
 <li><strong>DIS High School Student Council</strong> — President / Vice President</li>
 <li><strong>Daegu Youth Committee of Daegu City</strong> — Group Leader</li>
-<li><strong>YouthImpact ReminArt</strong> — Project Leader</li>
-<li><strong>Hackensack University Medical Center & HMH Palisades Medical Center</strong> — Medical Volunteer</li>
-<li><strong>Fox Vein Care / Park Slope Gastroenterology</strong> — Medical Shadowing</li>
 <li><strong>DIS Rock Band / DIS Orchestra / KIMEA National Honor Band</strong></li>
 </ul>
 </div>
 
-<h2 data-i18n="awards">Awards & Honors</h2>
+<h2>Honors</h2>
 
 <div class="profile-block reveal-card reveal-delay-4">
 
@@ -144,14 +166,6 @@ Research Archive of Rising Scholars (2025)
 
 </div>
 
-<h2 data-i18n="skills">Skills</h2>
-
-<div class="profile-block reveal-card reveal-delay-2">
-
-<p>Programming: MATLAB, Java, C</p>
-
-</div>
-
 </section>
 
 <footer>
@@ -179,6 +193,67 @@ window.addEventListener("load", revealOnScroll);
 </script>
 
 <script src="lang.js"></script>
+
+<style>
+.matriculation-card {
+  position: relative;
+  border: 1px solid #d4af37;
+  box-shadow: 0 0 25px rgba(212,175,55,0.4);
+  overflow: hidden;
+}
+
+.matriculation-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(212,175,55,0.4),
+    transparent 70%
+  );
+  transform: rotate(25deg);
+  animation: shine 4s infinite;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%) rotate(25deg); }
+  100% { transform: translateX(100%) rotate(25deg); }
+}
+
+.scholarship {
+  color: #c9a227;
+  font-weight: 700;
+}
+  .program {
+    color: #1f4ed8;
+    font-weight: 700;
+  }
+  .nyu-program {
+    margin: 0;
+    color: #7c3aed;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .education-stats p {
+    margin: 8px 0;
+  }
+
+  .ap-list {
+    margin-left: 10px;
+    line-height: 1.8;
+  }
+
+  .ap-note {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+  }
+</style>
 
 </body>
 </html>

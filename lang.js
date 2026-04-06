@@ -201,8 +201,8 @@ const consulting = {
   consult_booking_full: { en: "Booking: Schedule a meeting directly through the booking link below.", ko: "예약: 아래 링크를 통해 상담 일정을 바로 예약하세요." },
 
   summit_text: {
-    en: "Summit Scholars combines academic rigor, long-term mentorship, and strategic planning to develop students who are not only academically strong but also intellectually curious and well prepared for the most competitive universities.",
-    ko: "Summit Scholars는 학문적 엄격함, 장기 멘토십, 전략적 계획을 결합하여 학생들이 학업적으로 뛰어날 뿐만 아니라 지적 호기심을 갖고 경쟁력 있는 대학 진학을 준비하도록 돕습니다."
+    en: "Summit Scholars was built from direct experience navigating the U.S. curriculum and competitive university admissions.\n\nStudents need more than information — they need structure, mentorship, and a clear academic strategy. Through an integrated system combining academic guidance, standardized test preparation, and college consulting, Summit Scholars provides a pathway that is both rigorous and intentional.\n\nOur focus is not only on outcomes, but on developing students who think critically, build meaningful portfolios, and approach their academic journey with clarity and confidence.",
+    ko: "Summit Scholars는 미국 교육과정과 대학 입시를 직접 경험한 바탕에서 시작되었습니다.\n\n학생들에게 필요한 것은 단순한 정보가 아니라, 체계적인 방향성, 멘토링, 그리고 명확한 학업 전략입니다. 학업 지도, 시험 준비, 대학 컨설팅을 하나의 통합된 시스템으로 제공하여, 의도적이고 체계적인 성장 경로를 만듭니다.\n\n저희의 목표는 단순한 결과가 아니라, 학생들이 비판적으로 사고하고 의미 있는 포트폴리오를 구축하며 자신의 학업 여정을 주도할 수 있도록 돕는 것입니다."
   },
 
   path_foundations: { en: "Foundations", ko: "기초 단계" },
@@ -242,8 +242,10 @@ function applyLanguage(lang) {
     if(!entry) return;
     const text = entry[lang] || entry["en"]; // fallback to English
     if(!text) return;
-    if(el.tagName === "H1" || el.tagName === "DIV" || el.innerHTML.includes("<br>")){
-      el.innerHTML = text;
+    const formatted = text.replace(/\n/g, "<br>");
+
+    if(el.tagName === "H1" || el.tagName === "DIV" || el.innerHTML.includes("<br>") || key === "summit_text"){
+      el.innerHTML = formatted;
     } else {
       el.innerText = text;
     }
@@ -253,11 +255,24 @@ function applyLanguage(lang) {
 function setKorean(){
   localStorage.setItem('siteLanguage','ko');
   applyLanguage('ko');
+  updateRoadmapImage('ko');
 }
 
 function setEnglish(){
   localStorage.setItem('siteLanguage','en');
   applyLanguage('en');
+  updateRoadmapImage('en');
+}
+
+function updateRoadmapImage(lang){
+  const roadmap = document.getElementById("roadmap-img");
+  if(!roadmap) return;
+
+  if(lang === "ko"){
+    roadmap.src = "roadmap-kr.png";
+  } else {
+    roadmap.src = "roadmap-us.png";
+  }
 }
 
 /* ---------------- FLOATING CONSULT BUTTON ---------------- */
@@ -364,5 +379,6 @@ window.addEventListener('DOMContentLoaded', function(){
   const saved = localStorage.getItem('siteLanguage') || 'en';
 
   applyLanguage(saved);
+  updateRoadmapImage(saved);
 
 });
