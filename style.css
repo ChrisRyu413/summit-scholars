@@ -571,6 +571,28 @@ margin-bottom:25px;
 .nyu-logo{height:80px;}
 .university-name{margin:0;font-size:20px;font-weight:600;}
 .nyu-program{margin:0;color:#7c3aed;font-weight:700;font-size:16px;}
+.nyu-honor{
+display:inline-flex;
+align-items:center;
+gap:9px;
+margin:0;
+padding:8px 13px;
+border:1px solid rgba(212,175,55,0.65);
+border-radius:999px;
+background:#fff9df;
+color:#755b0b;
+font-size:14px;
+font-weight:700;
+}
+
+.nyu-honor span{
+padding-left:9px;
+border-left:1px solid rgba(117,91,11,0.25);
+font-size:12px;
+letter-spacing:.04em;
+text-transform:uppercase;
+}
+
 .admissions-label{margin-bottom:10px;color:#555;}
 
 .admissions-list{
@@ -584,7 +606,128 @@ margin:0 auto;
 .scholarship{color:#c9a227;font-weight:700;}
 .program{color:#1f4ed8;font-weight:700;}
 .education-stats p{margin:8px 0;}
-.ap-list{margin-left:10px;line-height:1.8;}
+
+.test-score-section{
+margin-top:26px;
+}
+
+.test-score-section > h3{
+margin:0 0 14px;
+color:var(--navy);
+font-size:19px;
+}
+
+.test-score-grid{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:14px;
+}
+
+.test-score-card{
+display:grid;
+grid-template-columns:auto 1fr;
+column-gap:14px;
+align-items:center;
+min-height:82px;
+padding:15px 18px;
+box-sizing:border-box;
+border:1px solid rgba(11,31,58,0.1);
+border-radius:12px;
+background:#f7f9fc;
+}
+
+.test-name{
+display:grid;
+place-items:center;
+width:46px;
+height:46px;
+border-radius:11px;
+color:white;
+font-size:14px;
+font-weight:800;
+letter-spacing:.04em;
+}
+
+.test-score-card strong{
+font-size:27px;
+line-height:1;
+color:var(--navy);
+}
+
+.test-score-card--sat{background:#eef5fc;border-color:#b9cee5;}
+.test-score-card--sat .test-name{background:#285d91;}
+.test-score-card--act{background:#f5f1fb;border-color:#d1c4e4;}
+.test-score-card--act .test-name{background:#72539a;}
+
+.ap-section{
+margin-top:26px;
+padding-top:22px;
+border-top:1px solid rgba(11,31,58,0.1);
+}
+
+.ap-section > h3{
+margin:0 0 15px;
+color:var(--navy);
+font-size:20px;
+}
+
+.ap-score-group{
+padding:16px;
+border:1px solid rgba(11,31,58,0.1);
+border-radius:12px;
+background:#f9fafc;
+}
+
+.ap-score-group + .ap-score-group{margin-top:14px;}
+.ap-score-group--five{border-left:4px solid #258d76;}
+.ap-score-group--four{border-left:4px solid #686bb8;}
+
+.ap-score-heading{
+display:flex;
+align-items:center;
+gap:14px;
+margin-bottom:13px;
+}
+
+.ap-score-badge{
+display:grid;
+place-items:center;
+width:40px;
+height:40px;
+flex:0 0 40px;
+border-radius:10px;
+color:white;
+font-size:21px;
+font-weight:800;
+}
+
+.ap-score-group--five .ap-score-badge{background:#258d76;}
+.ap-score-group--four .ap-score-badge{background:#686bb8;}
+
+.ap-score-heading h4{margin:0;font-size:16px;color:var(--navy);}
+
+.ap-course-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+gap:8px;
+}
+
+.ap-course-card{
+display:flex;
+align-items:center;
+min-height:38px;
+padding:8px 11px;
+box-sizing:border-box;
+border:1px solid rgba(11,31,58,0.08);
+border-radius:9px;
+background:white;
+font-size:12px;
+font-weight:650;
+line-height:1.35;
+}
+
+.ap-score-group--five .ap-course-card{border-left:3px solid #7fc8b6;}
+.ap-score-group--four .ap-course-card{border-left:3px solid #aaa9dc;}
 
 /* SCHEDULE PAGE */
 
@@ -723,36 +866,6 @@ text-align:center;
 .consulting-conclusion h2{font-size:28px;font-weight:700;letter-spacing:1px;}
 .consulting-conclusion p{margin-top:10px;font-size:15px;opacity:0.8;}
 
-#journey-track{
-position:fixed;
-right:40px;
-top:110px;
-bottom:120px;
-width:40px;
-pointer-events:none;
-z-index:5;
-}
-
-#journey-path{
-position:absolute;
-left:50%;
-transform:translateX(-50%);
-top:0;
-width:2px;
-height:100%;
-background:black;
-opacity:0.6;
-border-radius:2px;
-}
-
-#journey-student{
-position:absolute;
-left:50%;
-transform:translate(-50%,0);
-font-size:24px;
-transition:transform 0.25s ease-out;
-}
-
 /* CONNECT PAGE */
 
 .connect-page{
@@ -875,6 +988,10 @@ animation:consultShine 4s infinite;
 .schedule-container{margin:50px auto;padding:0 20px;}
 .consulting-two-column{grid-template-columns:1fr;}
 .major-grid{grid-template-columns:repeat(2, minmax(0, 1fr));}
-#journey-track{display:none;}
 .floating-consult{right:18px;bottom:18px;}
+.ap-course-grid{grid-template-columns:1fr;}
+}
+
+@media (max-width:520px){
+.test-score-grid{grid-template-columns:1fr;}
 }
