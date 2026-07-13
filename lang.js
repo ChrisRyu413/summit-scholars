@@ -37,7 +37,8 @@ const nav = {
   nav_profile: { en: "Profile", ko: "프로필" },
   nav_courses: { en: "Courses", ko: "수업" },
   nav_consulting: { en: "College Consulting", ko: "대학 컨설팅" },
-  nav_schedule: { en: "Schedule", ko: "상담 예약" }
+  nav_schedule: { en: "Schedule", ko: "상담 예약" },
+  nav_connect: { en: "Connect", ko: "연락처" }
 
 };
 
@@ -78,10 +79,12 @@ const profile = {
 
   education: { en: "Education", ko: "학력" },
   research: { en: "Research & Academic Experience", ko: "연구 및 학문 활동" },
-  leadership: { en: "Leadership & Activities", ko: "리더십 및 활동" },
+  leadership: { en: "Leadership", ko: "리더십" },
   awards: { en: "Awards & Honors", ko: "수상 경력" },
+  honors: { en: "Honors", ko: "수상 및 성과" },
   publications: { en: "Publications", ko: "출판" },
-  skills: { en: "Skills", ko: "기술" }
+  skills: { en: "Skills", ko: "기술" },
+  matriculation: { en: "College Matriculation", ko: "대학 진학 결과" }
 
 };
 
@@ -231,7 +234,15 @@ const translations = {
   ...hero,
   ...profile,
   ...courses,
-  ...consulting
+  ...consulting,
+  connect_title: { en: "Connect with Summit Scholars", ko: "Summit Scholars와 소통하기" },
+  connect_intro: { en: "Follow our community, see the latest updates, or get in touch directly.", ko: "커뮤니티에 참여하고 최신 소식을 확인하거나 직접 문의해 주세요." },
+  connect_naver_text: { en: "Join our Naver Cafe community.", ko: "네이버 카페 커뮤니티에 참여하세요." },
+  connect_instagram_text: { en: "Follow Summit Scholars on Instagram.", ko: "인스타그램에서 Summit Scholars를 팔로우하세요." },
+  connect_email_text: { en: "Email us with questions and inquiries.", ko: "질문 및 문의 사항을 이메일로 보내주세요." },
+  connect_visit: { en: "Visit page", ko: "페이지 방문" },
+  connect_follow: { en: "Follow us", ko: "팔로우하기" },
+  connect_email: { en: "Send an email", ko: "이메일 보내기" }
 };
 
 function applyLanguage(lang) {
@@ -277,78 +288,6 @@ function updateRoadmapImage(lang){
 
 /* ---------------- FLOATING CONSULT BUTTON ---------------- */
 
-function injectConsultStyles(){
-  const style = document.createElement("style");
-  style.innerHTML = `
-  .floating-consult{
-    position:fixed;
-    right:28px;
-    bottom:28px;
-
-    background:linear-gradient(135deg,#d6b25a,#b89333);
-    color:#fff;
-
-    padding:14px 22px;
-
-    border-radius:32px;
-
-    font-weight:600;
-    font-size:14px;
-    letter-spacing:.3px;
-
-    text-decoration:none;
-
-    box-shadow:
-      0 6px 20px rgba(0,0,0,0.25),
-      0 0 12px rgba(214,178,90,0.45);
-
-    z-index:9999;
-
-    overflow:hidden;
-
-    transition:
-      transform .22s ease,
-      box-shadow .22s ease,
-      background .25s ease;
-  }
-
-  .floating-consult:hover{
-
-    transform:translateY(-4px) scale(1.04);
-
-    box-shadow:
-      0 12px 32px rgba(0,0,0,0.35),
-      0 0 18px rgba(214,178,90,0.7);
-
-    background:linear-gradient(135deg,#e2c067,#c9a046);
-  }
-
-  .floating-consult::after{
-    content:"";
-    position:absolute;
-    top:0;
-    left:-75%;
-    width:50%;
-    height:100%;
-    background:linear-gradient(
-      120deg,
-      rgba(255,255,255,0) 0%,
-      rgba(255,255,255,0.55) 50%,
-      rgba(255,255,255,0) 100%
-    );
-    transform:skewX(-20deg);
-    animation:consultShine 4s infinite;
-  }
-
-  @keyframes consultShine{
-    0%{ left:-75%; }
-    60%{ left:130%; }
-    100%{ left:130%; }
-  }
-  `;
-  document.head.appendChild(style);
-}
-
 function createConsultButton(){
 
   if(document.querySelector(".floating-consult")) return;
@@ -357,6 +296,7 @@ function createConsultButton(){
 
   btn.href = "https://calendly.com/chrisryu4986/30min";
   btn.target = "_blank";
+  btn.rel = "noopener noreferrer";
   btn.className = "floating-consult";
 
   btn.setAttribute("data-i18n","book_consult");
@@ -365,8 +305,6 @@ function createConsultButton(){
   document.body.appendChild(btn);
 
 }
-
-injectConsultStyles();
 
 if(document.body){
   createConsultButton();

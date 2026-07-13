@@ -3,6 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Profile</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +13,7 @@
 <header>
 
 <a href="index.html" class="logo">
-<img src="summit-logo.png" class="logo-img" alt="Summit Scholars Logo" style="height:60px;">
+<img src="summit-logo.png" class="logo-img" alt="Summit Scholars Logo">
 </a>
 
 <nav>
@@ -20,59 +21,61 @@
 <a href="courses.html" data-i18n="nav_courses">Courses</a>
 <a href="consulting.html" data-i18n="nav_consulting">College Consulting</a>
 <a href="schedule.html" data-i18n="nav_schedule">Schedule</a>
+<a href="connect.html" data-i18n="nav_connect">Connect</a>
 </nav>
 
 <div class="lang-switch">
-<a href="#" onclick="setEnglish(); return false;">English</a>
+<a href="#" data-language="en">English</a>
 <span class="lang-separator">|</span>
-<a href="#" onclick="setKorean(); return false;">한국어</a>
+<a href="#" data-language="ko">한국어</a>
 
 </div>
 
 </header>
 
-<section class="profile-page">
+<main class="profile-page">
 
 <h1 data-i18n="profile_title">About the Founder</h1>
 
-<div class="profile-header reveal reveal-delay-1" style="display:flex;gap:40px;align-items:flex-start;max-width:900px;">
+<div class="profile-header reveal reveal-delay-1">
 
-<div class="profile-intro" style="flex:1;">
+<div class="profile-intro">
 <p data-i18n="profile_intro1">
 I am the founder and lead mentor of Summit Scholars, an academic mentorship program focused on helping students build strong analytical thinking and long-term academic success. Our program emphasizes conceptual understanding, structured learning, and rigorous preparation through custom-designed materials. Alongside my own mentorship, a small team of experienced instructors and academic specialists support students in tutoring and college consulting.
 </p>
-<p style="margin-top:15px;max-width:900px;">
+<p class="affiliation-label">
 <strong data-i18n="affiliated_with">Affiliated with:</strong>
 </p>
 
-<div style="display:flex;align-items:center;gap:20px;margin-top:20px;flex-wrap:wrap;">
-<img src="ccir-logo.png" alt="Cambridge Centre for International Research" style="height:60px;">
+<div class="affiliation">
+<img class="affiliation-logo" src="ccir-logo.png" alt="Cambridge Centre for International Research">
 <div>
-<p style="margin:0;"><strong>Cambridge Centre for International Research (CCIR)</strong></p>
-<p style="margin:4px 0 0 0;">Student Researcher · Spotlight Student (2×)</p>
+<p class="affiliation-name"><strong>Cambridge Centre for International Research (CCIR)</strong></p>
+<p class="affiliation-detail">Student Researcher · Spotlight Student (2×)</p>
+<p class="affiliation-detail">NYU Presidential Scholar (top 10%)</p>
 </div>
 </div>
 </div>
 
-<div class="profile-photo" style="border:3px solid #d4af37;padding:10px;border-radius:10px;background:white;">
-<img src="photo.png" alt="Instructor Photo" style="width:220px;border-radius:6px;display:block;">
+<div class="profile-photo">
+<img src="photo.png" alt="Instructor Photo">
 </div>
 
 </div>
 
 <h2 data-i18n="matriculation">College Matriculation</h2>
 
-<div class="profile-block reveal-card reveal-delay-2 matriculation-card" style="text-align:center;">
+<div class="profile-block reveal-card reveal-delay-2 matriculation-card">
 
-<div style="display:flex;flex-direction:column;align-items:center;gap:15px;margin-bottom:25px;">
-<img src="nyu-logo.png" alt="NYU Logo" style="height:80px;">
-<p style="margin:0;font-size:20px;font-weight:600;">New York University (NYU)</p>
+<div class="university-heading">
+<img class="nyu-logo" src="nyu-logo.png" alt="NYU Logo">
+<p class="university-name">New York University (NYU)</p>
 <p class="nyu-program">NYU College of Dentistry — 7-Year BA/DDS Program</p>
 </div>
 
-<p style="margin-bottom:10px;color:#555;">Admissions Results</p>
+<p class="admissions-label">Admissions Results</p>
 
-<ul style="font-size:14px;line-height:1.9;text-align:left;max-width:600px;margin:0 auto;">
+<ul class="admissions-list">
 <li>Saint Louis University <span class="program">Medical Scholars Program</span> — <span class="scholarship">(University Scholarship, $142k total)</span></li>
 <li>Adelphi University <span class="scholarship">(Presidential Scholarship, $160k total)</span></li>
 <li>Case Western Reserve University <span class="scholarship">(Vice President's Scholarship, $156k total)</span></li>
@@ -101,16 +104,14 @@ I am the founder and lead mentor of Summit Scholars, an academic mentorship prog
 <div class="education-stats">
 
 <p><strong>Expected Graduation:</strong> May 2026</p>
-<p><strong>GPA:</strong> 101.64 / 100 — High Honors</p>
+<p><strong>GPA:</strong> 102.03 / 100 — High Honors</p>
 <p><strong>Standardized Tests:</strong> SAT 1580 &nbsp;|&nbsp; ACT 35</p>
 
 <p><strong>AP Scores:</strong></p>
 <p class="ap-list">
-5 — AP Music Theory, AP Computer Science A, AP Psychology, AP Computer Science Principles, AP Microeconomics, AP Macroeconomics, AP Chemistry, AP Calculus BC, AP English Language and Composition<br>
-4 — AP United States History
+5 — AP Music Theory, AP Computer Science A, AP Psychology, AP Computer Science Principles, AP Microeconomics, AP Macroeconomics, AP Chemistry, AP Calculus BC, AP English Language and Composition, AP Biology, AP Statistics<br>
+4 — AP United States History, AP English Literature and Composition
 </p>
-
-<p class="ap-note">*About to take AP Biology, AP English Literature and Composition, AP Statistics</p>
 
 </div>
 
@@ -120,8 +121,8 @@ I am the founder and lead mentor of Summit Scholars, an academic mentorship prog
 
 <div class="profile-block reveal-card reveal-delay-3">
 <ul>
-<li><strong>DIS GIDAS Club (Genes in Disease and Symptoms)</strong> — Founder & President</li>
-<li><strong>DIS Spanish Honor Society</strong> — Founder & President</li>
+<li><strong>DIS GIDAS Club (Genes in Disease and Symptoms)</strong> — Founder &amp; President</li>
+<li><strong>DIS Spanish Honor Society</strong> — Founder &amp; President</li>
 <li><strong>Science National Honor Society</strong> — Vice President</li>
 <li><strong>DIS High School Student Council</strong> — President / Vice President</li>
 <li><strong>Daegu Youth Committee of Daegu City</strong> — Group Leader</li>
@@ -155,7 +156,7 @@ Research Archive of Rising Scholars (2025)
 
 </div>
 
-</section>
+</main>
 
 <footer>
 
@@ -163,86 +164,8 @@ Research Archive of Rising Scholars (2025)
 
 </footer>
 
-<script>
-function revealOnScroll(){
-const reveals = document.querySelectorAll(".reveal, .reveal-card");
-
-reveals.forEach(el => {
-const windowHeight = window.innerHeight;
-const elementTop = el.getBoundingClientRect().top;
-
-if(elementTop < windowHeight - 80){
-el.classList.add("active");
-}
-});
-}
-
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
-</script>
-
+<script src="main.js"></script>
 <script src="lang.js"></script>
-
-<style>
-.matriculation-card {
-  position: relative;
-  border: 1px solid #d4af37;
-  box-shadow: 0 0 25px rgba(212,175,55,0.4);
-  overflow: hidden;
-}
-
-.matriculation-card::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    120deg,
-    transparent 30%,
-    rgba(212,175,55,0.4),
-    transparent 70%
-  );
-  transform: rotate(25deg);
-  animation: shine 4s infinite;
-}
-
-@keyframes shine {
-  0% { transform: translateX(-100%) rotate(25deg); }
-  100% { transform: translateX(100%) rotate(25deg); }
-}
-
-.scholarship {
-  color: #c9a227;
-  font-weight: 700;
-}
-  .program {
-    color: #1f4ed8;
-    font-weight: 700;
-  }
-  .nyu-program {
-    margin: 0;
-    color: #7c3aed;
-    font-weight: 700;
-    font-size: 16px;
-  }
-  .education-stats p {
-    margin: 8px 0;
-  }
-
-  .ap-list {
-    margin-left: 10px;
-    line-height: 1.8;
-  }
-
-  .ap-note {
-    margin-top: 10px;
-    font-size: 13px;
-    color: #666;
-    font-style: italic;
-  }
-</style>
 
 </body>
 </html>
