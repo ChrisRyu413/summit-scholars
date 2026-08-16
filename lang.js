@@ -195,11 +195,11 @@ const consulting = {
   consulting_network_note: { en: "As Summit Scholars grows, the range of experience, insight, and opportunity available to students grows with it.", ko: "회사가 성장할수록 멘토들의 경험과 네트워크도 성장하고, 학생들에게 제공할 수 있는 기회의 폭도 함께 넓어집니다." },
   consulting_process_kicker: { en: "FROM INTEREST TO IMPACT", ko: "관심사에서 실제 성과까지" }, consulting_process_title: { en: "How opportunities take shape", ko: "기회를 만드는 과정" },
   consulting_process_1_title: { en: "Interest", ko: "관심 분야 분석" }, consulting_process_1_text: { en: "Goals, academic interests, and current activities", ko: "전공, 관심사 및 현재 활동 분석" },
-  consulting_process_2_title: { en: "Research", ko: "Opportunity Research" }, consulting_process_2_text: { en: "Organizations, professors, clinics, labs, and companies", ko: "기관 · 교수 · 병원 · 연구실 · 기업 조사" },
-  consulting_process_3_title: { en: "Outreach", ko: "Outreach" }, consulting_process_3_text: { en: "Cold email, introduction materials, and resume", ko: "Cold Email · 소개자료 · Resume 준비" },
-  consulting_process_4_title: { en: "Connection", ko: "Connection" }, consulting_process_4_text: { en: "Meetings, interviews, and organizational introductions", ko: "미팅 · 인터뷰 · 기관 연결" },
-  consulting_process_5_title: { en: "Execution", ko: "Execution" }, consulting_process_5_text: { en: "Shadowing, research, internships, service, or projects", ko: "Shadowing · Research · Internship · Volunteering · Project 진행" },
-  consulting_process_6_title: { en: "Development", ko: "Development" }, consulting_process_6_text: { en: "Document results, expand the work, and connect the story", ko: "성과 기록 · 프로젝트 확장 · 대학 입시 스토리 연결" },
+  consulting_process_2_title: { en: "Research", ko: "기회 조사" }, consulting_process_2_text: { en: "Organizations, professors, clinics, labs, and companies", ko: "관련 기관 · 교수 · 병원 · 연구실 · 기업 조사" },
+  consulting_process_3_title: { en: "Outreach", ko: "맞춤형 연락" }, consulting_process_3_text: { en: "Cold email, introduction materials, and resume", ko: "학생별 이메일 · 소개 자료 · 이력서 준비" },
+  consulting_process_4_title: { en: "Connection", ko: "기관 및 전문가 연결" }, consulting_process_4_text: { en: "Meetings, interviews, and organizational introductions", ko: "상담 · 면접 준비 · 적합한 기관 연결" },
+  consulting_process_5_title: { en: "Execution", ko: "활동 실행" }, consulting_process_5_text: { en: "Shadowing, research, internships, service, or projects", ko: "직업 체험 · 연구 · 인턴십 · 봉사 · 프로젝트 진행" },
+  consulting_process_6_title: { en: "Development", ko: "성과 발전" }, consulting_process_6_text: { en: "Document results, expand the work, and connect the story", ko: "성과 기록 · 활동 확장 · 대학 입시 이야기로 연결" },
   consulting_passion_access_kicker: { en: "PASSION PROJECTS IN PRACTICE", ko: "PASSION PROJECT의 실제 실행" },
   consulting_passion_access_title: { en: "A strong idea still needs a path into the real world.", ko: "Passion Project도 아이디어에서 끝나지 않습니다." },
   consulting_passion_access_text: { en: "A Passion Project does not end with an idea. We may help find an organization willing to pilot it, contact a professor for feedback, develop a nonprofit or healthcare partnership, recruit mentors, gather real-world feedback, and expand the project to additional institutions.", ko: "프로젝트를 실제로 사용할 기관을 찾고, 필요한 사람에게 연락하고, Pilot을 진행하고, Feedback을 받아 개선하는 과정까지 함께해야 비로소 하나의 강한 활동이 됩니다. 기관 Pilot, 교수 피드백, 비영리단체나 의료기관과의 협력, 멘토 연결 및 추가 기관으로의 확장을 함께 설계합니다." },
@@ -230,6 +230,10 @@ const consulting = {
   },
 
   schedule_title: { en: "Schedule a Meeting", ko: "상담 예약" },
+  schedule_eyebrow: { en: "PERSONALIZED INTRODUCTORY CONSULTATION", ko: "학생별 맞춤형 첫 상담" },
+  schedule_page_title: { en: "Plan Your Next Academic Step", ko: "다음 학업 단계를 함께 설계하세요" },
+  home_cta_title: { en: "Begin Your Academic Journey", ko: "목표를 향한 학업 여정을 시작하세요" },
+  home_cta_text: { en: "Academic mentorship and university consulting through Summit Scholars.", ko: "Summit Scholars의 학업 멘토링과 대학 컨설팅으로 명확한 방향을 만들어보세요." },
 
   schedule_text1: {
     en: "Parents may schedule an introductory consultation to discuss student academic goals and course planning.",
@@ -242,6 +246,11 @@ const consulting = {
   consult_length_full: { en: "Consultation Length: 30 minutes", ko: "상담 시간: 30분" },
   consult_format_full: { en: "Format: Online meeting", ko: "형식: 온라인 미팅" },
   consult_booking_full: { en: "Booking: Schedule a meeting directly through the booking link below.", ko: "예약: 아래 링크를 통해 상담 일정을 바로 예약하세요." },
+  consult_length_label: { en: "30 minutes", ko: "30분 상담" },
+  consult_length_note: { en: "Focused introductory conversation", ko: "학생의 목표에 집중하는 첫 대화" },
+  consult_format_label: { en: "Online meeting", ko: "상담 요약 및 맞춤 안내서 제공" },
+  consult_format_note: { en: "Join from wherever you are", ko: "상담 내용과 권장 지원 방향, 비용 안내를 문서로 정리해 드립니다" },
+  consult_booking_prompt: { en: "Choose a convenient time through our secure booking page.", ko: "카카오톡 상담 신청 안내를 확인해 주세요." },
 
   summit_text: {
     en: "Summit Scholars was built from direct experience navigating the U.S. curriculum and competitive university admissions.\n\nStudents need more than information — they need structure, mentorship, and a clear academic strategy. Through an integrated system combining academic guidance, standardized test preparation, and college consulting, Summit Scholars provides a pathway that is both rigorous and intentional.\n\nOur focus is not only on outcomes, but on developing students who think critically, build meaningful portfolios, and approach their academic journey with clarity and confidence.",
@@ -285,7 +294,22 @@ const translations = {
   connect_email: { en: "Send an email", ko: "이메일 보내기" }
 };
 
+const consultationLinks = {
+  en: "https://calendly.com/chrisryu4986/30min",
+  ko: "https://docs.google.com/document/d/1M03ic6TssZmMdGmDrhaGEJjeOH6RDXdkgluSVavK0aw/edit?usp=sharing"
+};
+
+function updateConsultationLinks(lang){
+  const href = consultationLinks[lang] || consultationLinks.en;
+  document.querySelectorAll("[data-consult-link]").forEach(link => {
+    link.href = href;
+  });
+}
+
 function applyLanguage(lang) {
+
+  document.documentElement.lang = lang;
+  updateConsultationLinks(lang);
 
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
@@ -338,6 +362,7 @@ function createConsultButton(){
   btn.target = "_blank";
   btn.rel = "noopener noreferrer";
   btn.className = "floating-consult";
+  btn.setAttribute("data-consult-link", "");
 
   btn.setAttribute("data-i18n","book_consult");
   btn.innerText = "Book Consultation";

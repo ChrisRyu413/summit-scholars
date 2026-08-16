@@ -25,6 +25,45 @@ function initializeLanguageSwitch(){
   });
 }
 
+function initializeMobileNavigation(){
+  const toggle = document.querySelector(".nav-toggle");
+  const navigation = document.getElementById("site-nav");
+  if(!toggle || !navigation) return;
+
+  const closeNavigation = () => {
+    document.body.classList.remove("nav-open");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Open navigation menu");
+  };
+
+  toggle.addEventListener("click", () => {
+    const isOpen = document.body.classList.toggle("nav-open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
+    toggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+  });
+
+  navigation.addEventListener("click", (event) => {
+    if(event.target.closest("a")) closeNavigation();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if(event.key === "Escape" && document.body.classList.contains("nav-open")){
+      closeNavigation();
+      toggle.focus();
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if(document.body.classList.contains("nav-open") && !event.target.closest("header")){
+      closeNavigation();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if(window.innerWidth > 900) closeNavigation();
+  });
+}
+
 function updateOnScroll(){
   revealOnScroll();
 }
@@ -34,5 +73,6 @@ window.addEventListener("load", updateOnScroll);
 document.addEventListener("DOMContentLoaded", () => {
   initializeHeroVideo();
   initializeLanguageSwitch();
+  initializeMobileNavigation();
   updateOnScroll();
 });

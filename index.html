@@ -6,6 +6,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Summit Scholars</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="premium.css">
 
@@ -13,13 +17,21 @@
 
 <body data-page="home">
 
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 <header>
 
 <a href="index.html" class="logo">
 <img src="summit-logo.png" class="logo-img" alt="Summit Scholars Logo">
 </a>
 
-<nav>
+<button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+<nav id="site-nav">
 <a href="profile.html" data-i18n="nav_profile">Our Team</a>
 <a href="courses.html" data-i18n="nav_courses">Courses</a>
 <a href="consulting.html" data-i18n="nav_consulting">College Consulting</a>
@@ -35,10 +47,10 @@
 
 </header>
 
-<main>
+<main id="main-content">
 <section class="hero home-hero section-soft-blue">
 
-<video id="hero-video" class="hero-video" autoplay muted loop playsinline>
+<video id="hero-video" class="hero-video" autoplay muted loop playsinline preload="metadata" poster="hero-poster.jpg">
   <source src="hero-background.mp4" type="video/mp4">
 </video>
 <div class="hero-overlay"></div>
@@ -97,7 +109,7 @@ Elite academic mentorship and strategic college consulting.
 
 
 <div class="roadmap-scroll">
-<img id="roadmap-img" class="roadmap-image" src="roadmap-us.png" alt="Summit Scholars Roadmap">
+<img id="roadmap-img" class="roadmap-image" src="roadmap-us.png" alt="Summit Scholars Roadmap" loading="lazy">
 </div>
 
 </div>
@@ -128,7 +140,7 @@ As someone who has personally gone through this process, I approach each student
 If you are looking for guidance that is structured, intentional, and grounded in real experience, Summit Scholars is here to support you.
 
 </p>
-<img src="summit-logo.png" alt="logo" class="letter-logo">
+<img src="summit-logo.png" alt="Summit Scholars" class="letter-logo" loading="lazy">
 </div>
 
 </div>
@@ -137,15 +149,18 @@ If you are looking for guidance that is structured, intentional, and grounded in
 
 
 <section class="cta-section home-cta-section section-accent-purple">
+<div class="home-cta-inner">
+<span class="home-cta-mark" aria-hidden="true">
+<span></span><span></span><span></span>
+</span>
+<h2 data-i18n="home_cta_title">Begin Your Academic Journey</h2>
 
-<h2 data-i18n="schedule_title">Begin Your Academic Journey</h2>
-
-<p class="home-cta-text" data-i18n="hero_subtitle">
+<p class="home-cta-text" data-i18n="home_cta_text">
 Academic mentorship and university consulting through Summit Scholars.
 </p>
 
-<a class="cta cta--gold" href="schedule.html" data-i18n="book_consult">Book a Consultation</a>
-
+<a class="cta cta--gold" href="https://calendly.com/chrisryu4986/30min" target="_blank" rel="noopener noreferrer" data-i18n="book_consult" data-consult-link>Book a Consultation</a>
+</div>
 </section>
 </main>
 
@@ -153,9 +168,9 @@ Academic mentorship and university consulting through Summit Scholars.
 <p>Summit Scholars</p>
 </footer>
 
-<script src="main.js"></script>
-<script src="lang.js"></script>
-<script src="premium.js"></script>
+<script src="main.js" defer></script>
+<script src="lang.js" defer></script>
+<script src="premium.js" defer></script>
 
 </body>
 </html>
