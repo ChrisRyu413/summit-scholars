@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +8,22 @@
 <link rel="stylesheet" href="premium.css">
 </head>
 <body data-page="profile">
+<a class="skip-link" href="#main-content" data-i18n="skip_content">Skip to main content</a>
 <header>
 <a href="index.html" class="logo"><img src="summit-logo.png" class="logo-img" alt="Summit Scholars Logo"></a>
-<nav>
+<button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+<nav id="site-nav">
 <a href="profile.html" data-i18n="nav_profile">Our Team</a>
 <a href="courses.html" data-i18n="nav_courses">Courses</a>
 <a href="consulting.html" data-i18n="nav_consulting">College Consulting</a>
+<a href="dental.html" data-i18n="nav_dental">Dental Admissions</a>
 <a href="schedule.html" data-i18n="nav_schedule">Schedule</a>
 <a href="connect.html" data-i18n="nav_connect">Connect</a>
 </nav>
 <div class="lang-switch"><a href="#" data-language="en">English</a><span class="lang-separator">|</span><a href="#" data-language="ko">한국어</a></div>
 </header>
 
-<main class="team-page">
+<main id="main-content" class="team-page">
 <section class="team-hero">
 <div class="team-inner team-hero-inner">
 <p class="team-kicker" data-i18n="team_kicker">SUMMIT SCHOLARS MENTORS</p>
@@ -42,7 +45,7 @@
 </div>
 <div class="mentor-details">
 <div class="mentor-highlights">
-<span>NYU Presidential Scholar</span><span>Top 10%</span><span data-i18n="chris_founder">Founder &amp; CEO</span>
+<span data-i18n="chris_presidential">NYU Presidential Scholar</span><span>Top 10%</span><span data-i18n="chris_founder">Founder &amp; CEO</span>
 </div>
 <div class="mentor-stats" aria-label="Chris academic profile">
 <div><strong>1580</strong><span>SAT</span></div><div><strong>35</strong><span>ACT</span></div><div><strong>102.03</strong><span>GPA / 100</span></div><div><strong>13</strong><span>AP Exams</span></div><div><strong>11 / 2</strong><span data-i18n="chris_ap_split">AP 5s / 4s</span></div><div><strong>3 / 5</strong><span data-i18n="chris_research_stats">Publications / Conferences</span></div>
@@ -52,35 +55,35 @@
 <summary data-i18n="chris_ap_details">View AP score details</summary>
 <div class="ap-detail-grid"><span>AP Biology — 5</span><span>AP Statistics — 5</span><span>AP English Literature — 4</span><span>AP Chemistry — 5</span><span>AP English Language — 5</span><span>AP Macroeconomics — 5</span><span>AP Microeconomics — 5</span><span>AP Calculus BC — 5</span><span>AP U.S. History — 4</span><span>AP Psychology — 5</span><span>AP CSP — 5</span><span>AP CSA — 5</span><span>AP Music Theory — 5</span></div>
 </details>
-<div class="mentor-specialties"><h3 data-i18n="mentoring_specialties">Mentoring Specialties</h3><ul><li data-i18n="sp_college">College Admissions Strategy</li><li>BS/DDS &amp; Pre-Dental</li><li>AP / SAT / ACT</li><li data-i18n="sp_gpa">GPA Management</li><li data-i18n="sp_ec">Extracurricular Strategy</li><li>Passion Projects</li><li data-i18n="sp_research">Research</li><li data-i18n="sp_essay">Essay &amp; Interview Strategy</li></ul></div>
+<div class="mentor-specialties"><h3 data-i18n="mentoring_specialties">Mentoring Specialties</h3><ul><li data-i18n="sp_college">College Admissions Strategy</li><li data-i18n="sp_combined_dental">BS/DDS &amp; Pre-Dental</li><li>AP / SAT / ACT</li><li data-i18n="sp_gpa">GPA Management</li><li data-i18n="sp_ec">Extracurricular Strategy</li><li data-i18n="sp_passion_project">Passion Projects</li><li data-i18n="sp_research">Research</li><li data-i18n="sp_essay">Essay &amp; Interview Strategy</li></ul></div>
 </div>
 </article>
 
 <article class="mentor-card reveal-card" id="yeji">
-<div class="mentor-visual mentor-visual--placeholder">
-<div class="mentor-photo mentor-photo--initials" role="img" aria-label="Yeji profile image placeholder"><span>Y</span></div>
+<div class="mentor-visual">
+<div class="mentor-photo"><img src="yeji_profile.jpeg" alt="Yeji, Senior Mentor"></div>
 <p class="mentor-role" data-i18n="yeji_role">Senior Mentor</p><h2>Yeji</h2>
-<p class="mentor-program">Columbia University<br><span>College of Dental Medicine · D2 Student</span></p>
+<p class="mentor-program">Columbia University<br><span data-i18n="yeji_program">College of Dental Medicine · D2 Student</span></p>
 </div>
 <div class="mentor-details">
-<div class="mentor-highlights"><span>Columbia CDM · D2</span><span>Summa Cum Laude</span><span>Phi Beta Kappa</span><span>Dean’s List</span></div>
+<div class="mentor-highlights"><span data-i18n="yeji_cdm">Columbia CDM · D2</span><span data-i18n="summa_cum_laude">Summa Cum Laude</span><span data-i18n="phi_beta_kappa">Phi Beta Kappa</span><span data-i18n="deans_list">Dean’s List</span></div>
 <div class="mentor-stats mentor-stats--five" aria-label="Yeji academic profile"><div class="featured-stat"><strong>28 / 30</strong><span>DAT</span></div><div><strong>3.96</strong><span>GPA / 4.00</span></div><div><strong>D2</strong><span>Columbia CDM</span></div><div><strong>SCL</strong><span>Summa Cum Laude</span></div><div><strong>ΦΒΚ</strong><span>Phi Beta Kappa</span></div></div>
 <p class="mentor-bio" data-i18n="yeji_bio">Yeji is a D2 student at Columbia University College of Dental Medicine. She has experience with both international-school education and Korean secondary education, including Minjok Leadership Academy. Before attending Columbia CDM, she was accepted to the NYU BA/DDS 7-Year Dental Program. At NYU, she earned a 3.96/4.00 GPA, graduated Summa Cum Laude, received Dean’s List recognition, and was inducted into Phi Beta Kappa. She earned a DAT score of 28/30 and mentors both high-school and pre-dental students.</p>
-<div class="mentor-specialties"><h3 data-i18n="mentoring_specialties">Mentoring Specialties</h3><ul><li data-i18n="sp_dental">Dental School Admissions</li><li data-i18n="sp_predental">Pre-Dental Mentoring</li><li data-i18n="sp_dat">DAT Preparation</li><li data-i18n="sp_undergrad_gpa">Undergraduate GPA</li><li data-i18n="sp_highschool_gpa">High School GPA</li><li data-i18n="sp_academic">Academic Planning</li><li>BS/DDS Strategy</li><li data-i18n="sp_ec_development">Extracurricular Development</li></ul></div>
+<div class="mentor-specialties"><h3 data-i18n="mentoring_specialties">Mentoring Specialties</h3><ul><li data-i18n="sp_dental">Dental School Admissions</li><li data-i18n="sp_predental">Pre-Dental Mentoring</li><li data-i18n="sp_dat">DAT Preparation</li><li data-i18n="sp_undergrad_gpa">Undergraduate GPA</li><li data-i18n="sp_highschool_gpa">High School GPA</li><li data-i18n="sp_academic">Academic Planning</li><li data-i18n="sp_combined_strategy">BS/DDS Strategy</li><li data-i18n="sp_ec_development">Extracurricular Development</li></ul></div>
 </div>
 </article>
 
 <article class="mentor-card reveal-card" id="sean">
-<div class="mentor-visual mentor-visual--placeholder">
-<div class="mentor-photo mentor-photo--initials" role="img" aria-label="Sean profile image placeholder"><span>S</span></div>
+<div class="mentor-visual">
+<div class="mentor-photo"><img src="sean_profile.png" alt="Sean, Senior Mentor"></div>
 <p class="mentor-role" data-i18n="sean_role">Senior Mentor</p><h2>Sean</h2>
 <p class="mentor-program">NJIT BS/DMD <span data-i18n="seven_year_dental">7-Year Dental Program</span></p>
 </div>
 <div class="mentor-details">
-<div class="mentor-highlights"><span>NJIT BS/DMD</span><span>Dean’s List</span></div>
+<div class="mentor-highlights"><span>NJIT BS/DMD</span><span data-i18n="deans_list">Dean’s List</span></div>
 <div class="mentor-stats mentor-stats--four" aria-label="Sean academic profile"><div><strong>3.9</strong><span>GPA / 4.0</span></div><div><strong>1540</strong><span>SAT</span></div><div><strong>6</strong><span>AP Exams</span></div><div><strong>6</strong><span data-i18n="sean_ap_fives">AP Scores of 5</span></div></div>
 <p class="mentor-bio" data-i18n="sean_bio">Sean grew up and studied in Virginia and has firsthand experience with the U.S. education system. He was admitted to the NJIT BS/DMD 7-Year Dental Program, currently maintains a 3.9/4.0 GPA, and has earned Dean’s List recognition. In high school, he scored 1540 on the SAT and earned scores of 5 on all six AP exams. His mentoring focuses on U.S. academic planning, AP/GPA management, combined dental programs, and long-term pre-dental preparation.</p>
-<div class="mentor-specialties"><h3 data-i18n="mentoring_specialties">Mentoring Specialties</h3><ul><li>BS/DMD Admissions</li><li data-i18n="sp_predental_planning">Pre-Dental Planning</li><li data-i18n="sp_us_highschool">U.S. High School Strategy</li><li>SAT</li><li>AP</li><li data-i18n="sp_gpa">GPA Management</li><li data-i18n="sp_college_short">College Admissions</li><li data-i18n="sp_ec_planning">Extracurricular Planning</li></ul></div>
+<div class="mentor-specialties"><h3 data-i18n="mentoring_specialties">Mentoring Specialties</h3><ul><li data-i18n="sp_combined_admissions">BS/DMD Admissions</li><li data-i18n="sp_predental_planning">Pre-Dental Planning</li><li data-i18n="sp_us_highschool">U.S. High School Strategy</li><li>SAT</li><li>AP</li><li data-i18n="sp_gpa">GPA Management</li><li data-i18n="sp_college_short">College Admissions</li><li data-i18n="sp_ec_planning">Extracurricular Planning</li></ul></div>
 </div>
 </article>
 </div>

@@ -5,6 +5,7 @@
     profile: "profile.html",
     courses: "courses.html",
     consulting: "consulting.html",
+    dental: "dental.html",
     schedule: "schedule.html",
     connect: "connect.html"
   };
@@ -31,10 +32,17 @@
     progress.appendChild(bar);
     document.body.appendChild(progress);
 
-    function update(){
+    let ticking = false;
+    function render(){
+      ticking = false;
       const scrollable = document.documentElement.scrollHeight - window.innerHeight;
       const amount = scrollable > 0 ? Math.min(window.scrollY / scrollable,1) : 0;
       bar.style.transform = `scaleX(${amount})`;
+    }
+    function update(){
+      if(ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(render);
     }
 
     window.addEventListener("scroll",update,{passive:true});
@@ -46,8 +54,15 @@
     const header = document.querySelector("header");
     if(!header) return;
 
-    function update(){
+    let ticking = false;
+    function render(){
+      ticking = false;
       header.classList.toggle("is-scrolled",window.scrollY > 24);
+    }
+    function update(){
+      if(ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(render);
     }
 
     window.addEventListener("scroll",update,{passive:true});

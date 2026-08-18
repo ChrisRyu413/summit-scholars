@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +9,17 @@
 </head>
 
 <body data-page="consulting">
+<a class="skip-link" href="#main-content" data-i18n="skip_content">Skip to main content</a>
 <header>
 <a href="index.html" class="logo">
 <img src="summit-logo.png" class="logo-img" alt="Summit Scholars Logo">
 </a>
-<nav>
+<button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+<nav id="site-nav">
 <a href="profile.html" data-i18n="nav_profile">Our Team</a>
 <a href="courses.html" data-i18n="nav_courses">Courses</a>
 <a href="consulting.html" data-i18n="nav_consulting">College Consulting</a>
+<a href="dental.html" data-i18n="nav_dental">Dental Admissions</a>
 <a href="schedule.html" data-i18n="nav_schedule">Schedule</a>
 <a href="connect.html" data-i18n="nav_connect">Connect</a>
 </nav>
@@ -27,7 +30,82 @@
 </div>
 </header>
 
-<main>
+<main id="main-content">
+<section class="consulting-cinema" data-cinema-frames="9" aria-label="The complete college consulting journey" hidden>
+<div class="cinema-sticky">
+<canvas class="cinema-canvas" aria-hidden="true"></canvas>
+<div class="cinema-glow" aria-hidden="true"></div>
+<div class="cinema-grain" aria-hidden="true"></div>
+
+<div class="cinema-chrome">
+<a href="#cinema-end" class="cinema-skip">Skip the story</a>
+<div class="cinema-status"><span data-cinema-label>BEGIN WITH THE STUDENT</span><b><i data-cinema-current>01</i> / 09</b></div>
+<div class="cinema-timeline"><span></span></div>
+</div>
+
+<div class="cinema-act-titles" aria-hidden="true">
+<div class="cinema-act-title cinema-act-title--one"><span>SECTION 01</span><strong>Strategic<br>Foundation</strong><p>Understand the student. Build the academic direction. Open the right doors.</p></div>
+<div class="cinema-act-title cinema-act-title--two"><span>SECTION 02</span><strong>Passion<br>Project</strong><p>Move from participation to ownership—and from an idea to measurable impact.</p></div>
+<div class="cinema-act-title cinema-act-title--three"><span>SECTION 03</span><strong>Holistic<br>Review</strong><p>Position the full record, shape the narrative, and carry one story through submission.</p></div>
+</div>
+
+<div class="cinema-world" aria-hidden="true">
+<div class="cinema-student-mark"><span>STUDENT</span><strong>Potential</strong></div>
+
+<div class="cinema-compass">
+<i></i><i></i><i></i><b>N</b><b>E</b><b>S</b><b>W</b>
+<div><span>GOAL</span><strong>Direction</strong></div>
+</div>
+
+<div class="cinema-network">
+<svg viewBox="0 0 600 420" preserveAspectRatio="none"><path d="M300 210L92 92M300 210L510 76M300 210L520 336M300 210L86 340M92 92L510 76M86 340L520 336"/></svg>
+<span class="network-node network-node--one">Professor</span><span class="network-node network-node--two">Research</span><span class="network-node network-node--three">Organization</span><span class="network-node network-node--four">Community</span><strong>Opportunity<br>Network</strong>
+</div>
+
+<div class="cinema-project-machine">
+<div class="project-machine-core"><span>PASSION PROJECT</span><strong>Build</strong></div>
+<div class="project-machine-arm project-machine-arm--one"><i></i><span>Prototype</span></div>
+<div class="project-machine-arm project-machine-arm--two"><i></i><span>Pilot</span></div>
+<div class="project-machine-arm project-machine-arm--three"><i></i><span>Feedback</span></div>
+<div class="project-machine-arm project-machine-arm--four"><i></i><span>Iterate</span></div>
+</div>
+
+<div class="cinema-impact">
+<i></i><i></i><i></i><i></i>
+<div><span>EVIDENCE OF</span><strong>Impact</strong><p>Used · Measured · Expanded</p></div>
+</div>
+
+<div class="cinema-documents">
+<div class="cinema-paper cinema-paper--one"><span>01</span><strong>Transcript</strong><i></i><i></i><i></i></div>
+<div class="cinema-paper cinema-paper--two"><span>02</span><strong>Activities</strong><i></i><i></i><i></i></div>
+<div class="cinema-paper cinema-paper--three"><span>03</span><strong>Project</strong><i></i><i></i><i></i></div>
+<div class="cinema-paper cinema-paper--four"><span>04</span><strong>Essays</strong><i></i><i></i><i></i></div>
+<div class="cinema-application"><span>ONE COHERENT</span><strong>Application</strong><p>Proof becomes story.</p></div>
+</div>
+
+<div class="cinema-launch">
+<svg viewBox="0 0 700 430" preserveAspectRatio="none"><path d="M40 380C170 370 205 260 330 250S510 180 660 40"/><circle cx="40" cy="380" r="6"/><circle cx="330" cy="250" r="6"/><circle cx="660" cy="40" r="9"/></svg>
+<span class="cinema-launch-label cinema-launch-label--start">PLAN</span><span class="cinema-launch-label cinema-launch-label--middle">GROW</span><span class="cinema-launch-label cinema-launch-label--end">NEXT STAGE</span>
+<div class="cinema-mentor-orbit"><i></i><span>MENTORSHIP</span><strong>We keep<br>moving.</strong></div>
+</div>
+</div>
+
+<div class="cinema-narrative">
+<article data-cinema-frame="0"><span>THE STARTING POINT</span><h1 data-i18n="cinema_0_title">Before we plan,<br>we learn the student.</h1><p data-i18n="cinema_0_text">We begin with the student’s transcript, school curriculum, testing history, activities, interests, time commitments, and family priorities. This diagnostic tells us what is already strong, what is missing, and which goals are ambitious but still realistic.</p><div class="cinema-explainer"><strong data-i18n="cinema_0_label">What families receive</strong><span data-i18n="cinema_0_detail">A clear starting-point assessment and a prioritized plan—not a generic checklist.</span></div><ul><li>Transcript &amp; curriculum review</li><li>Strengths, gaps &amp; constraints</li><li>Goals &amp; family priorities</li></ul></article>
+<article data-cinema-frame="1"><span>ACADEMIC DIRECTION</span><h2 data-i18n="cinema_1_title">Build an academic plan<br>that keeps doors open.</h2><p data-i18n="cinema_1_text">Course selection, GPA, AP rigor, and SAT or ACT preparation must support the same university goals. We map these decisions across multiple semesters, balancing ambition with the student’s actual workload and protecting the academic foundation of the application.</p><div class="cinema-explainer"><strong data-i18n="cinema_1_label">What we manage</strong><span data-i18n="cinema_1_detail">Course rigor, GPA targets, testing milestones, and the order in which each goal should be tackled.</span></div><ul><li>GPA &amp; course rigor</li><li>AP course planning</li><li>SAT / ACT strategy</li><li>Multi-year timeline</li></ul></article>
+<article data-cinema-frame="2"><span>OPPORTUNITY DEVELOPMENT</span><h2 data-i18n="cinema_2_title">Turn an interest into<br>firsthand experience.</h2><p data-i18n="cinema_2_text">Students often know what they like but not where to explore it. We research suitable professors, laboratories, clinics, nonprofits, competitions, and summer programs, then help the student prepare personalized outreach, a résumé, follow-ups, and meetings.</p><div class="cinema-explainer"><strong data-i18n="cinema_2_label">Why this matters</strong><span data-i18n="cinema_2_detail">The goal is not to collect activities. It is to test an interest in the real world and discover which direction deserves deeper commitment.</span></div><ul><li>Research &amp; internships</li><li>Shadowing &amp; volunteering</li><li>Cold outreach</li><li>Programs &amp; competitions</li></ul></article>
+<article data-cinema-frame="3"><span>FROM PARTICIPATION TO OWNERSHIP</span><h2 data-i18n="cinema_3_title">Move from joining<br>to creating.</h2><p data-i18n="cinema_3_text">Participating in an existing program demonstrates interest. Creating something demonstrates initiative. We help the student use what they observed through classes and activities to identify a specific problem worth solving.</p><div class="cinema-explainer"><strong data-i18n="cinema_3_label">The transition</strong><span data-i18n="cinema_3_detail">Interest becomes a focused question; the question becomes a proposal; the proposal becomes a project the student genuinely owns.</span></div><ul><li>Problem definition</li><li>Project concept</li><li>Pitch deck &amp; action plan</li><li>Prototype direction</li></ul></article>
+<article data-cinema-frame="4"><span>PASSION PROJECT EXECUTION</span><h2 data-i18n="cinema_4_title">Make the idea work<br>outside the student’s head.</h2><p data-i18n="cinema_4_text">A Passion Project becomes meaningful only when someone can use it, respond to it, or benefit from it. We guide development of the prototype, identify a pilot audience or partner organization, organize feedback, and help the student improve the work through multiple iterations.</p><div class="cinema-explainer"><strong data-i18n="cinema_4_label">Hands-on support</strong><span data-i18n="cinema_4_detail">Prototype development, pilot planning, partnerships, research connections, data collection, presentations, competitions, and iteration.</span></div><ul><li>Prototype</li><li>Pilot &amp; partnerships</li><li>Feedback &amp; data</li><li>Improve &amp; present</li></ul></article>
+<article data-cinema-frame="5"><span>MEASURABLE IMPACT</span><h2 data-i18n="cinema_5_title">Show what changed<br>because of the work.</h2><p data-i18n="cinema_5_text">Impact does not need to mean thousands of users. It must be specific and credible. We help the student define meaningful outcomes, document participation and feedback, analyze what improved, and decide whether the project should expand to new people or institutions.</p><div class="cinema-explainer"><strong data-i18n="cinema_5_label">What remains</strong><span data-i18n="cinema_5_detail">A functioning result, evidence of learning and leadership, measurable outcomes, and a final product or impact report.</span></div><ul><li>Outcome measurement</li><li>Evidence &amp; documentation</li><li>Scaling strategy</li><li>Final impact report</li></ul></article>
+<article data-cinema-frame="6"><span>APPLICATION STRATEGY</span><h2 data-i18n="cinema_6_title">Choose where—and how—<br>the student should apply.</h2><p data-i18n="cinema_6_text">We build a balanced university list by examining academic fit, intended major, program structure, selectivity, and the student’s preferences. Then we decide how Early Decision, Early Action, Restrictive Early Action, and Regular Decision should be used within one realistic plan.</p><div class="cinema-explainer"><strong data-i18n="cinema_6_label">The strategy includes</strong><span data-i18n="cinema_6_detail">University and major selection, reach–target–likely balance, application positioning, round selection, and a complete deadline calendar.</span></div><ul><li>College &amp; program list</li><li>Major strategy</li><li>ED · EA · REA · RD</li><li>Deadline planning</li></ul></article>
+<article data-cinema-frame="7"><span>STORY, APPLICATION &amp; SUBMISSION</span><h2 data-i18n="cinema_7_title">Translate years of work<br>into one credible story.</h2><p data-i18n="cinema_7_text">The application should explain the meaning behind the record without exaggerating it. We guide the personal statement and supplemental essays from brainstorming through revision, refine activity and honors descriptions, prepare interviews, and review every component before submission.</p><div class="cinema-explainer"><strong data-i18n="cinema_7_label">What we review</strong><span data-i18n="cinema_7_detail">Personal statement, supplemental essays, activities, honors, résumé, additional information, interviews, deadlines, and final submission checks.</span></div><ul><li>Essays &amp; supplements</li><li>Activities &amp; honors</li><li>Interview preparation</li><li>Final application review</li></ul></article>
+<article data-cinema-frame="8"><span>LONG-TERM MENTORSHIP</span><h2 data-i18n="cinema_8_title">The plan changes<br>as the student grows.</h2><p data-i18n="cinema_8_text">Interests change, grades fluctuate, opportunities appear, and goals become more specific. We revisit the strategy throughout the relationship instead of forcing the student to follow an outdated plan. Our mentor team collaborates across academics, research, projects, testing, and admissions whenever the student’s next decision requires it.</p><div class="cinema-explainer"><strong data-i18n="cinema_8_label">The Summit Scholars difference</strong><span data-i18n="cinema_8_detail">One evolving strategy, shared across mentors, from the student’s current position through the final application and next stage.</span></div><a href="schedule.html" data-i18n="cinema_8_cta">Begin your strategy <b>↗</b></a></article>
+</div>
+
+<div class="cinema-frame-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+</section>
+
 <section class="consulting-hero">
 <div class="consulting-inner consulting-inner--narrow">
 <p class="consulting-eyebrow" data-i18n="consulting_eyebrow">Long-Term College Mentorship</p>
@@ -36,7 +114,7 @@
 <div class="consulting-pillars" aria-label="Consulting service areas">
 <span data-i18n="consulting_pillar_academic">Academics</span>
 <span data-i18n="consulting_pillar_opportunities">Opportunities</span>
-<span>Passion Project</span>
+<span data-i18n="consulting_pillar_project">Passion Project</span>
 <span data-i18n="consulting_pillar_admissions">Admissions</span>
 </div>
 </div>
@@ -50,11 +128,106 @@
 </div>
 </section>
 
+<section class="summit-path" aria-labelledby="summit-path-title" hidden>
+<div class="consulting-inner">
+<div class="summit-path-heading">
+<p class="consulting-kicker" data-i18n="strategy_visual_kicker">THE SUMMIT PATH</p>
+<h2 id="summit-path-title" data-i18n="strategy_visual_title">Four parts. One rising strategy.</h2>
+<p data-i18n="strategy_visual_intro">Select a milestone to see how each part supports the next—and how the complete student profile develops over time.</p>
+</div>
+
+<div class="summit-path-visual">
+<svg viewBox="0 0 1000 390" role="img" aria-label="A four-stage path rising toward the summit">
+<defs><linearGradient id="summit-mountain" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfe7f1"/><stop offset="1" stop-color="#f8fafc"/></linearGradient></defs>
+<path class="summit-mountain-back" d="M0 390 205 208 335 303 565 78 710 245 805 154 1000 390Z"/>
+<path class="summit-mountain-front" d="M0 390 285 255 405 326 620 154 1000 390Z"/>
+<path class="summit-path-base" pathLength="100" d="M112 327C225 298 246 260 350 269S508 233 578 184 735 142 887 72"/>
+<path class="summit-path-progress" pathLength="100" d="M112 327C225 298 246 260 350 269S508 233 578 184 735 142 887 72"/>
+<g class="summit-map-point is-active" data-map-point="0" transform="translate(112 327)"><circle r="18"/><circle r="5"/><text x="0" y="-31">01</text></g>
+<g class="summit-map-point" data-map-point="1" transform="translate(350 269)"><circle r="18"/><circle r="5"/><text x="0" y="-31">02</text></g>
+<g class="summit-map-point" data-map-point="2" transform="translate(578 184)"><circle r="18"/><circle r="5"/><text x="0" y="-31">03</text></g>
+<g class="summit-map-point" data-map-point="3" transform="translate(887 72)"><circle r="18"/><circle r="5"/><text x="0" y="-31">04</text></g>
+<path class="summit-flag" d="M887 72V18M889 20h70l-18 17 18 17h-70"/>
+</svg>
+</div>
+
+<div class="summit-path-controls" role="tablist" aria-label="College consulting milestones">
+<button class="is-active" type="button" role="tab" aria-selected="true" aria-controls="summit-detail-0" data-path-step="0"><b>01</b><span data-i18n="strategy_visual_academics">Academics</span><small>GPA · AP · Testing</small></button>
+<button type="button" role="tab" aria-selected="false" aria-controls="summit-detail-1" data-path-step="1"><b>02</b><span data-i18n="strategy_visual_opportunities">Opportunities</span><small>Research · Outreach</small></button>
+<button type="button" role="tab" aria-selected="false" aria-controls="summit-detail-2" data-path-step="2"><b>03</b><span>Passion Project</span><small>Build · Measure · Grow</small></button>
+<button type="button" role="tab" aria-selected="false" aria-controls="summit-detail-3" data-path-step="3"><b>04</b><span data-i18n="strategy_visual_application">Application</span><small>Position · Essays · Submit</small></button>
+</div>
+
+<div class="summit-path-details">
+<article class="is-active" id="summit-detail-0" role="tabpanel" data-path-detail="0"><h3 data-i18n="strategy_visual_academics_title">Build the academic foundation</h3><p data-i18n="strategy_visual_academics_text">Course selection, GPA, AP rigor, and testing are planned together so the student’s academic record supports their intended universities and major.</p></article>
+<article id="summit-detail-1" role="tabpanel" data-path-detail="1" hidden><h3 data-i18n="strategy_visual_opportunities_title">Turn interests into experience</h3><p data-i18n="strategy_visual_opportunities_text">We identify relevant research, programs, organizations, and professionals, then support thoughtful outreach and preparation.</p></article>
+<article id="summit-detail-2" role="tabpanel" data-path-detail="2" hidden><h3 data-i18n="strategy_visual_project_title">Create evidence of initiative</h3><p data-i18n="strategy_visual_project_text">The student develops, pilots, measures, and expands a project that transforms genuine interest into visible ownership and impact.</p></article>
+<article id="summit-detail-3" role="tabpanel" data-path-detail="3" hidden><h3 data-i18n="strategy_visual_application_title">Connect everything into one story</h3><p data-i18n="strategy_visual_application_text">College selection, positioning, essays, activities, interviews, and deadlines bring years of work into one coherent application.</p></article>
+</div>
+</div>
+</section>
+
+<section class="admissions-film" aria-label="How college admissions strategy comes together" hidden>
+<div class="admissions-film-sticky">
+<div class="admissions-film-frame">
+<div class="admissions-film-header">
+<span class="admissions-film-chapter">THE BIG PICTURE</span>
+<p class="admissions-film-counter"><b>01</b> / 06</p>
+</div>
+
+<div class="admissions-film-stage">
+<div class="admissions-film-core">
+<span>ONE CONNECTED STRATEGY</span>
+<strong>College<br>Admissions</strong>
+</div>
+
+<svg class="admissions-film-lines" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
+<path data-line="academic" d="M500 300 C390 300 350 170 245 150"/>
+<path data-line="opportunity" d="M500 300 C610 300 650 170 755 150"/>
+<path data-line="project" d="M500 300 C390 300 350 430 245 450"/>
+<path data-line="application" d="M500 300 C610 300 650 430 755 450"/>
+</svg>
+
+<article class="admissions-film-node admissions-film-node--academic" data-film-node="academic">
+<span>01</span><strong>Academics</strong><p>GPA · Course Rigor<br>AP · SAT / ACT</p>
+</article>
+<article class="admissions-film-node admissions-film-node--opportunity" data-film-node="opportunity">
+<span>02</span><strong>Opportunities</strong><p>Research · Internships<br>Shadowing · Service</p>
+</article>
+<article class="admissions-film-node admissions-film-node--project" data-film-node="project">
+<span>03</span><strong>Passion Project</strong><p>Build · Test<br>Measure · Expand</p>
+</article>
+<article class="admissions-film-node admissions-film-node--application" data-film-node="application">
+<span>04</span><strong>Application</strong><p>Positioning · Essays<br>Interviews · Submission</p>
+</article>
+
+<div class="admissions-film-focus">
+<span>WHERE STRATEGY BECOMES REAL</span>
+<strong>Passion<br><em>Project</em></strong>
+<p>Academics reveal the interest. Opportunities build the experience. A Passion Project turns both into evidence of initiative and impact.</p>
+<div class="admissions-film-framework"><span>Build</span><i></i><span>Implement</span><i></i><span>Measure</span><i></i><span>Expand</span></div>
+</div>
+</div>
+
+<div class="admissions-film-caption" aria-live="polite">
+<p data-film-caption="0">A strong application is not a collection of separate tasks.</p>
+<p data-film-caption="1">Academic choices create the foundation—and reveal what a student genuinely wants to explore.</p>
+<p data-film-caption="2">The right opportunities turn curiosity into firsthand experience.</p>
+<p data-film-caption="3">A Passion Project transforms interest and experience into something original, measurable, and real.</p>
+<p data-film-caption="4">The application connects every decision into one clear and credible story.</p>
+<p data-film-caption="5">Everything comes together through work that leaves evidence of impact.</p>
+</div>
+
+<div class="admissions-film-progress" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</div>
+</section>
+
 <section class="consulting-services" aria-labelledby="consulting-services-title">
 <div class="consulting-inner">
 <div class="consulting-section-heading">
-<p class="consulting-kicker" data-i18n="consulting_services_kicker">FOUR AREAS OF SUPPORT</p>
-<h2 id="consulting-services-title" data-i18n="consulting_services_title">A complete admissions journey</h2>
+<p class="consulting-kicker" data-i18n="consulting_services_kicker">A CONNECTED SYSTEM</p>
+<h2 id="consulting-services-title" data-i18n="consulting_services_title">Three foundations—and one defining project</h2>
 </div>
 
 <div class="consulting-service-grid">
@@ -78,7 +251,7 @@
 <ul class="consulting-tag-list">
 <li data-i18n="consulting_tag_shadowing">Shadowing</li><li data-i18n="consulting_tag_volunteering">Volunteering</li>
 <li data-i18n="consulting_tag_internships">Internships</li><li data-i18n="consulting_tag_research">Research</li>
-<li data-i18n="consulting_tag_programs">Summer Programs</li><li>Cold Outreach</li>
+<li data-i18n="consulting_tag_programs">Summer Programs</li><li data-i18n="consulting_tag_outreach">Cold Outreach</li>
 </ul>
 <p class="consulting-card-note" data-i18n="consulting_ec_note">When available, we also draw on mentor networks and personal connections to help develop real opportunities.</p>
 </article>
@@ -94,7 +267,7 @@
 </article>
 
 <article class="consulting-service-card reveal-card reveal-delay-3">
-<span class="consulting-card-number">04</span>
+<span class="consulting-card-number">03</span>
 <h3 data-i18n="consulting_admissions_title">College Admissions</h3>
 <p data-i18n="consulting_admissions_text">From college-list strategy and application positioning to essays, interviews, and final submissions, we turn years of academics and activities into one coherent admissions narrative.</p>
 <ul class="consulting-check-list">
@@ -106,6 +279,40 @@
 <li data-i18n="consulting_admissions_item6">Interviews · Deadlines · Final checks</li>
 </ul>
 </article>
+</div>
+</div>
+</section>
+
+<div class="passion-chapter">
+<section class="passion-dimension" aria-labelledby="passion-dimension-title">
+<div class="passion-dimension-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="passion-dimension-inner">
+<div class="passion-dimension-header">
+<p data-i18n="passion_dimension_kicker">A SEPARATE DIMENSION OF THE APPLICATION</p>
+<h2 id="passion-dimension-title" data-i18n="passion_dimension_title">Where an interest becomes something real.</h2>
+<p data-i18n="consulting_passion_text">Turn a student's genuine interests into a real project that is built, implemented, measured, expanded, and ultimately leaves evidence of impact.</p>
+</div>
+
+<div class="passion-dimension-flow" aria-label="Passion Project development stages">
+<div><b>01</b><strong data-i18n="passion_dimension_idea">Idea</strong><span data-i18n="passion_dimension_idea_sub">Find the problem</span></div><i></i>
+<div><b>02</b><strong data-i18n="passion_dimension_build">Build</strong><span data-i18n="passion_dimension_build_sub">Create the prototype</span></div><i></i>
+<div><b>03</b><strong data-i18n="passion_dimension_pilot">Pilot</strong><span data-i18n="passion_dimension_pilot_sub">Enter the real world</span></div><i></i>
+<div><b>04</b><strong data-i18n="passion_dimension_measure">Measure</strong><span data-i18n="passion_dimension_measure_sub">Gather evidence</span></div><i></i>
+<div><b>05</b><strong data-i18n="passion_dimension_impact">Impact</strong><span data-i18n="passion_dimension_impact_sub">Improve and expand</span></div>
+</div>
+
+<div class="passion-dimension-practice">
+<div>
+<p data-i18n="consulting_passion_access_kicker">PASSION PROJECTS IN PRACTICE</p>
+<h3 data-i18n="consulting_passion_access_title">A strong idea still needs a path into the real world.</h3>
+</div>
+<p data-i18n="consulting_passion_access_text">A Passion Project does not end with an idea. We may help find an organization willing to pilot it, contact a professor for feedback, develop a nonprofit or healthcare partnership, recruit mentors, gather real-world feedback, and expand the project to additional institutions.</p>
+<div data-i18n="consulting_execution_framework">Build → Implement → Measure → Expand → Impact</div>
+</div>
+
+<div class="passion-dimension-details">
+<div><span data-i18n="consulting_support_label">Support may include</span><p data-i18n="consulting_passion_support">Ideation · Pitch Deck · Prototype · Pilot · Partnerships · Feedback &amp; Data · Iteration · Impact Measurement · Competitions · Presentations · Research Connections · Scaling · Final Impact Report</p></div>
+<strong data-i18n="consulting_passion_included">Passion Project management is included in core consulting—not offered as a separate add-on.</strong>
 </div>
 </div>
 </section>
@@ -125,6 +332,8 @@
 </div>
 </div>
 </section>
+
+</div>
 
 <section class="opportunity-access">
 <div class="consulting-inner">
@@ -199,15 +408,6 @@
 
 <section class="opportunity-continuity">
 <div class="consulting-inner">
-<div class="passion-access-callout">
-<div>
-<p class="consulting-kicker" data-i18n="consulting_passion_access_kicker">PASSION PROJECTS IN PRACTICE</p>
-<h2 data-i18n="consulting_passion_access_title">A strong idea still needs a path into the real world.</h2>
-</div>
-<p data-i18n="consulting_passion_access_text">A Passion Project does not end with an idea. We may help find an organization willing to pilot it, contact a professor for feedback, develop a nonprofit or healthcare partnership, recruit mentors, gather real-world feedback, and expand the project to additional institutions.</p>
-<div class="passion-access-framework">Build → Implement → Measure → Expand → Impact</div>
-</div>
-
 <div class="long-term-mentorship">
 <p class="consulting-kicker" data-i18n="consulting_longterm_kicker">LONG-TERM MENTORSHIP</p>
 <h2 data-i18n="consulting_longterm_title">From the first step to the next stage—and beyond.</h2>
@@ -217,6 +417,89 @@
 </div>
 </section>
 
+<section class="story-scroll story-opportunity" data-story="opportunity" data-story-steps="4" aria-label="From student interest to a real opportunity" hidden>
+<div class="story-sticky">
+<div class="story-shell">
+<header class="story-header"><span>CHAPTER 02</span><p>CREATE THE OPENING</p><b><i data-story-current>01</i> / 04</b></header>
+<div class="opportunity-scene">
+<div class="opportunity-student"><span>STUDENT</span><strong>A real<br>interest</strong><i></i></div>
+<div class="opportunity-route" aria-hidden="true"><span></span></div>
+<div class="opportunity-destination"><span>REAL WORLD</span><strong>A meaningful<br>opportunity</strong><i></i></div>
+<div class="opportunity-action opportunity-action--research"><b>01</b><strong>Research</strong><span>Find the right organizations, professors, clinics, labs, and programs.</span></div>
+<div class="opportunity-action opportunity-action--outreach"><b>02</b><strong>Outreach</strong><span>Build a thoughtful cold email, introduction, and resume.</span></div>
+<div class="opportunity-action opportunity-action--connect"><b>03</b><strong>Connect</strong><span>Prepare for meetings, interviews, introductions, and follow-up.</span></div>
+</div>
+<div class="story-copy">
+<p data-story-copy="0">A student’s interest is only a starting point. The next step is finding where that interest can become real.</p>
+<p data-story-copy="1">We map the people and places already doing meaningful work in the student’s field.</p>
+<p data-story-copy="2">Then we help the student approach them—with ownership, clarity, and a reason to respond.</p>
+<p data-story-copy="3">The result may become research, shadowing, service, an internship, or the first partner for something bigger.</p>
+</div>
+<div class="story-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+</div>
+</div>
+</section>
+
+<section class="story-scroll story-project" data-story="project" data-story-steps="5" aria-label="How a Passion Project grows" hidden>
+<div class="story-sticky">
+<div class="story-shell">
+<header class="story-header"><span>CHAPTER 03</span><p>BUILD SOMETHING REAL</p><b><i data-story-current>01</i> / 05</b></header>
+<div class="project-scene">
+<div class="project-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="project-seed"><span>INTEREST</span><strong>One<br>idea</strong></div>
+<div class="project-stage project-stage--prototype"><span>01</span><strong>Prototype</strong><small>Make the idea tangible</small></div>
+<div class="project-stage project-stage--pilot"><span>02</span><strong>Pilot</strong><small>Put it into the real world</small></div>
+<div class="project-stage project-stage--measure"><span>03</span><strong>Measure</strong><small>Collect feedback and evidence</small></div>
+<div class="project-stage project-stage--expand"><span>04</span><strong>Expand</strong><small>Improve, partner, and scale</small></div>
+<div class="project-impact"><span>LEAVE EVIDENCE OF</span><strong>Impact</strong><p>A result people can see, use, measure, and remember.</p></div>
+</div>
+<div class="story-copy">
+<p data-story-copy="0">The strongest Passion Projects do not begin with a résumé line. They begin with a question the student genuinely cares about.</p>
+<p data-story-copy="1">We turn that question into a prototype—a tool, program, product, resource, study, or initiative that can be tested.</p>
+<p data-story-copy="2">A real pilot replaces assumptions with feedback from an organization, community, or audience.</p>
+<p data-story-copy="3">Evidence creates direction. The student measures what worked, improves what did not, and documents the result.</p>
+<p data-story-copy="4">The project grows beyond an idea into initiative, leadership, and measurable impact—the center of a credible admissions story.</p>
+</div>
+<div class="story-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+</div>
+</section>
+
+<section class="story-scroll story-application" data-story="application" data-story-steps="5" aria-label="How the application comes together" hidden>
+<div class="story-sticky">
+<div class="story-shell">
+<header class="story-header"><span>CHAPTER 04</span><p>CONNECT THE STORY</p><b><i data-story-current>01</i> / 05</b></header>
+<div class="application-scene">
+<div class="application-piece application-piece--academics"><span>ACADEMICS</span><strong>Transcript</strong><small>Rigor · GPA · Testing</small></div>
+<div class="application-piece application-piece--activities"><span>EXPERIENCE</span><strong>Activities</strong><small>Roles · Results · Growth</small></div>
+<div class="application-piece application-piece--project"><span>INITIATIVE</span><strong>Passion Project</strong><small>Ownership · Evidence · Impact</small></div>
+<div class="application-piece application-piece--voice"><span>VOICE</span><strong>Essays</strong><small>Meaning · Reflection · Direction</small></div>
+<div class="application-final"><span>ONE COHERENT</span><strong>Application</strong><p>Every part supports the same authentic story.</p><div><i></i><i></i><i></i></div></div>
+</div>
+<div class="story-copy">
+<p data-story-copy="0">Years of academic choices show how the student thinks, works, and challenges themselves.</p>
+<p data-story-copy="1">Activities reveal where the student invested time—and what changed because they were there.</p>
+<p data-story-copy="2">The Passion Project becomes proof of initiative: not a claim, but work the student can explain and defend.</p>
+<p data-story-copy="3">Essays give those facts meaning. Interviews bring the same voice to life.</p>
+<p data-story-copy="4">College lists, positioning, essays, activities, honors, interviews, and deadlines now move as one application—not separate tasks.</p>
+</div>
+<div class="story-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+</div>
+</section>
+
+<section class="story-mentorship" hidden>
+<div class="story-mentorship-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="consulting-inner">
+<span>CHAPTER 05 — LONG-TERM MENTORSHIP</span>
+<h2>The strategy grows<br>as the student grows.</h2>
+<p>Academic plans become more focused. Activities gain depth. Projects expand. The student’s direction becomes clearer—and the admissions strategy becomes more precise.</p>
+<div class="mentorship-years"><div><b>01</b><strong>Explore</strong><span>Interests · Foundation</span></div><i></i><div><b>02</b><strong>Build</strong><span>Skills · Experiences</span></div><i></i><div><b>03</b><strong>Create</strong><span>Project · Impact</span></div><i></i><div><b>04</b><strong>Apply</strong><span>Story · Submission</span></div></div>
+<strong class="story-mentorship-close">One mentor team. One evolving strategy. One complete journey.</strong>
+</div>
+</section>
+
+<div id="cinema-end"></div>
 <section class="consulting-conclusion reveal reveal-delay-4">
 <h2 data-i18n="consulting_motto">Manage the grades. Create opportunities. Grow the project.</h2>
 <p data-i18n="consulting_motto_sub">Then connect it all into one strong admissions story.</p>

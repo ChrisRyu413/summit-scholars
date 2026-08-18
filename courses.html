@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 <meta charset="UTF-8">
@@ -10,6 +10,7 @@
 </head>
 
 <body data-page="courses">
+<a class="skip-link" href="#main-content" data-i18n="skip_content">Skip to main content</a>
 
 <header>
 
@@ -17,10 +18,12 @@
 <img src="summit-logo.png" class="logo-img" alt="Summit Scholars Logo">
 </a>
 
-<nav>
+<button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+<nav id="site-nav">
 <a href="profile.html" data-i18n="nav_profile">Our Team</a>
 <a href="courses.html" data-i18n="nav_courses">Courses</a>
 <a href="consulting.html" data-i18n="nav_consulting">College Consulting</a>
+<a href="dental.html" data-i18n="nav_dental">Dental Admissions</a>
 <a href="schedule.html" data-i18n="nav_schedule">Schedule</a>
 <a href="connect.html" data-i18n="nav_connect">Connect</a>
 </nav>
@@ -33,7 +36,7 @@
 
 </header>
 
-<main class="courses-page">
+<main id="main-content" class="courses-page">
 
 <h1 data-i18n="courses_title">Courses</h1>
 
@@ -47,18 +50,18 @@ toward strong academic performance.
 
 <div class="course-grid">
 
-<div class="course-box reveal-card reveal-delay-1">AP Calculus BC</div>
-<div class="course-box reveal-card reveal-delay-2">AP Chemistry</div>
-<div class="course-box reveal-card reveal-delay-3">AP Microeconomics</div>
-<div class="course-box reveal-card reveal-delay-4">AP Macroeconomics</div>
-<div class="course-box reveal-card reveal-delay-1">AP Computer Science A</div>
-<div class="course-box reveal-card reveal-delay-2">AP Computer Science Principles</div>
-<div class="course-box reveal-card reveal-delay-3">AP Music Theory</div>
-<div class="course-box reveal-card reveal-delay-4">AP English Language and Composition</div>
-<div class="course-box reveal-card reveal-delay-1">AP United States History</div>
-<div class="course-box reveal-card reveal-delay-2">AP Biology</div>
-<div class="course-box reveal-card reveal-delay-3">AP Statistics</div>
-<div class="course-box reveal-card reveal-delay-4">AP English Literature and Composition</div>
+<div class="course-box reveal-card reveal-delay-1" data-i18n="course_calc">AP Calculus BC</div>
+<div class="course-box reveal-card reveal-delay-2" data-i18n="course_chem">AP Chemistry</div>
+<div class="course-box reveal-card reveal-delay-3" data-i18n="course_micro">AP Microeconomics</div>
+<div class="course-box reveal-card reveal-delay-4" data-i18n="course_macro">AP Macroeconomics</div>
+<div class="course-box reveal-card reveal-delay-1" data-i18n="course_csa">AP Computer Science A</div>
+<div class="course-box reveal-card reveal-delay-2" data-i18n="course_csp">AP Computer Science Principles</div>
+<div class="course-box reveal-card reveal-delay-3" data-i18n="course_music">AP Music Theory</div>
+<div class="course-box reveal-card reveal-delay-4" data-i18n="course_lang">AP English Language and Composition</div>
+<div class="course-box reveal-card reveal-delay-1" data-i18n="course_ush">AP United States History</div>
+<div class="course-box reveal-card reveal-delay-2" data-i18n="course_bio">AP Biology</div>
+<div class="course-box reveal-card reveal-delay-3" data-i18n="course_stats">AP Statistics</div>
+<div class="course-box reveal-card reveal-delay-4" data-i18n="course_lit">AP English Literature and Composition</div>
 
 </div>
 
@@ -66,8 +69,8 @@ toward strong academic performance.
 
 <div class="course-grid foundation-grid">
 
-<div class="course-box reveal-card reveal-delay-1">Foundational Math<br><small>(SAT Prep, Pre‑Algebra, Algebra I, Algebra II)</small></div>
-<div class="course-box reveal-card reveal-delay-2">Foundational English<br><small>(SAT Prep – Reading &amp; Writing, Essay, Speaking)</small></div>
+<div class="course-box reveal-card reveal-delay-1" data-i18n="course_foundation_math">Foundational Math<br><small>(SAT Prep, Pre‑Algebra, Algebra I, Algebra II)</small></div>
+<div class="course-box reveal-card reveal-delay-2" data-i18n="course_foundation_english">Foundational English<br><small>(SAT Prep – Reading &amp; Writing, Essay, Speaking)</small></div>
 
 </div>
 

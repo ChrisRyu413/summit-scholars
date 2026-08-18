@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 <meta charset="UTF-8">
@@ -10,16 +10,19 @@
 </head>
 
 <body data-page="connect">
+<a class="skip-link" href="#main-content" data-i18n="skip_content">Skip to main content</a>
 
 <header>
 <a href="index.html" class="logo">
 <img src="summit-logo.png" class="logo-img" alt="Summit Scholars Logo">
 </a>
 
-<nav>
+<button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+<nav id="site-nav">
 <a href="profile.html" data-i18n="nav_profile">Our Team</a>
 <a href="courses.html" data-i18n="nav_courses">Courses</a>
 <a href="consulting.html" data-i18n="nav_consulting">College Consulting</a>
+<a href="dental.html" data-i18n="nav_dental">Dental Admissions</a>
 <a href="schedule.html" data-i18n="nav_schedule">Schedule</a>
 <a href="connect.html" data-i18n="nav_connect">Connect</a>
 </nav>
@@ -31,7 +34,7 @@
 </div>
 </header>
 
-<main class="connect-page">
+<main id="main-content" class="connect-page">
 <h1 data-i18n="connect_title">Connect with Summit Scholars</h1>
 <p class="connect-intro" data-i18n="connect_intro">Follow our community, see the latest updates, or get in touch directly.</p>
 
